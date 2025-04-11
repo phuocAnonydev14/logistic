@@ -177,12 +177,12 @@ export default function AboutPage() {
             <div className="md:col-span-2 lg:col-span-3 gradient-bg rounded-xl p-8 text-white flex flex-col md:flex-row items-center justify-between mt-6">
               <div className="mb-6 md:mb-0 md:w-2/3">
                 <h3 className="text-2xl font-semibold mb-2">Bạn cần giải pháp logistics hoàn hảo?</h3>
-                <p class="text-blue-100">
+                <p className="text-blue-100">
                   Hãy liên hệ với chúng tôi ngay hôm nay để được tư vấn các giải pháp tối ưu
                   cho doanh nghiệp của bạn.
                 </p>
               </div>
-              <a href="#contact" class="bg-white text-blue-600 px-8 py-3 rounded-lg shadow-lg hover:bg-blue-50 transition duration-300">
+              <a href="#contact" className="bg-white text-blue-600 px-8 py-3 rounded-lg shadow-lg hover:bg-blue-50 transition duration-300">
                 Liên hệ ngay
               </a>
             </div>

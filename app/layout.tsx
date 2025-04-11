@@ -20,12 +20,15 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="vi">
-		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet"/>
+		<head>
+			<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet"/>
+		</head>
+		
 		<body className={inter.className}>
 		<Header/>
 		{/*<MainLayout>*/}
-		<main>
-					{children}
+		<main className="overflow-hidden">
+			{children}
 		</main>
 		{/*</MainLayout>*/}
 		<Footer/>
@@ -37,3 +40,5 @@ export default function RootLayout({
 
 import './globals.css'
 import {MainLayout} from "@/components/MainLayout";
+import Script from "next/script";
+import Head from "next/head";

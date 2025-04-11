@@ -6,33 +6,33 @@ import Image from "next/image"
 const partners = [
 	{
 		id: 1,
-		name: "Toll",
-		logo: "https://images.pexels.com/photos/5998117/pexels-photo-5998117.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+		name: 'Microsoft',
+		logo: "https://cdn-icons-png.flaticon.com/128/732/732221.png"
 	},
 	{
 		id: 2,
-		name: "Gemadep",
-		logo: "https://images.pexels.com/photos/5998117/pexels-photo-5998117.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+		name: 'Microsoft',
+		logo: "https://cdn-icons-png.flaticon.com/128/732/732221.png"
 	},
 	{
 		id: 3,
-		name: "Taisun",
-		logo: "https://images.pexels.com/photos/5998117/pexels-photo-5998117.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+		name: 'Microsoft',
+		logo: "https://cdn-icons-png.flaticon.com/128/732/732221.png"
 	},
 	{
 		id: 4,
-		name: "Tân Á",
-		logo: "https://images.pexels.com/photos/5998117/pexels-photo-5998117.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2.png"
+		name: 'Microsoft',
+		logo: "https://cdn-icons-png.flaticon.com/128/732/732221.png"
 	},
 	{
 		id: 5,
-		name: "Vigracera",
-		logo: "https://images.pexels.com/photos/5998117/pexels-photo-5998117.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+		name: 'Microsoft',
+		logo: "https://cdn-icons-png.flaticon.com/128/732/732221.png"
 	},
 	{
 		id: 6,
-		name: "Habeco",
-		logo: "https://images.pexels.com/photos/5998117/pexels-photo-5998117.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+		name: 'Microsoft',
+		logo: "https://cdn-icons-png.flaticon.com/128/732/732221.png"
 	},
 ]
 
@@ -81,7 +81,7 @@ export default function PartnersSection() {
 										className="object-contain"
 									/>
 								</div>
-								<p>{partner.name}</p>
+								<p className="mt-1 font-semibold text-sm">{partner.name}</p>
 							</div>
 						))}
 					</div>
