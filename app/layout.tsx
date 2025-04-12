@@ -4,6 +4,7 @@ import {Inter} from "next/font/google"
 import "./globals.css"
 import Header from "@/components/header"
 import Footer from "@/components/footer"
+import {MainLayout} from "@/components/MainLayout";
 
 const inter = Inter({subsets: ["latin"]})
 
@@ -25,20 +26,16 @@ export default function RootLayout({
 		</head>
 		
 		<body className={inter.className}>
-		<Header/>
-		{/*<MainLayout>*/}
-		<main className="overflow-hidden">
-			{children}
-		</main>
-		{/*</MainLayout>*/}
-		<Footer/>
+		<MainLayout>
+			<Header/>
+			<main className="overflow-hidden mb-10">
+				{children}
+			</main>
+			<Footer/>
+		</MainLayout>
 		</body>
 		</html>
 	)
 }
 
 
-import './globals.css'
-import {MainLayout} from "@/components/MainLayout";
-import Script from "next/script";
-import Head from "next/head";

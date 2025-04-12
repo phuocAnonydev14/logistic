@@ -1,11 +1,9 @@
 export interface Category extends BaseEntity{
-  name_VN: string;
-  name_EN: string;
+  name: string;
   slug: string;
   image: string;
-  description_VN?: string;
-  description_EN?: string;
-  products: Product[];
+  description?: string;
+  content?: string
 }
 
 export interface Product extends BaseEntity{

@@ -8,18 +8,18 @@ import {GetAllFilter, Pagination} from "@/types/app.type";
 
 class BlogService extends HttpService {
   async getAllBlogs(query: GetAllFilter) {
-    return this.get<IGenericResponsePagination<BlogType[], Pagination>>(
+    return (await this.get<IGenericResponsePagination<BlogType[], Pagination>>(
       "/blogs",
       { ...query, limit: query.limit || 100 },
-    );
+    ))?.data;
   }
 
   async getBlogDetail(slug: string) {
-    return this.get<IGenericResponse<BlogType>>(
+    return (await this.get<IGenericResponse<BlogType>>(
       `/blogs/${slug}`,
       { view: true },
       true,
-    );
+    ))?.data;
   }
 
   async likeBlog(blogId: number) {

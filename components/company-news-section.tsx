@@ -1,7 +1,9 @@
 import Image from "next/image"
 import Link from "next/link"
+import {InternalNews} from "@/components/internal-news";
+import {ExternalNews} from "@/components/external-news";
 
-const companyNews = [
+export const companyNews = [
   {
     id: 1,
     title: "HÒA PHÁT LOGISTICS – 15 NĂM KHÁT VỌNG GIÁ TRỊ",
@@ -18,6 +20,12 @@ const companyNews = [
   },
   {
     id: 3,
+    title: "HÒA PHÁT LOGISTICS THAM DỰ HỘI THẢO GIAO ĐỔI KINH DOANH – ĐƯỜNG ĐẾN THÀNH CÔNG",
+    image: "https://images.pexels.com/photos/5998117/pexels-photo-5998117.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    slug: "hoa-phat-logistics-tham-du-hoi-thao-giao-doi-kinh-doanh",
+    category: "Tin công ty",
+  },{
+    id: 4,
     title: "HÒA PHÁT LOGISTICS THAM DỰ HỘI THẢO GIAO ĐỔI KINH DOANH – ĐƯỜNG ĐẾN THÀNH CÔNG",
     image: "https://images.pexels.com/photos/5998117/pexels-photo-5998117.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     slug: "hoa-phat-logistics-tham-du-hoi-thao-giao-doi-kinh-doanh",
@@ -89,61 +97,17 @@ const companyImages = [
 export default function CompanyNewsSection() {
   return (
     <section className="py-8">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-4 flex flex-col gap-12">
         {/* Tin công ty */}
-        <div className="mb-8">
-          <div className="bg-[#003366] py-2 px-4 mb-4">
-            <h2 className="text-xl font-bold text-white">Tin công ty</h2>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-            {companyNews.map((news) => (
-              <Link key={news.id} href={`/tin-tuc/${news.slug}`} className="block h-full">
-                <div className="bg-white border border-gray-200 overflow-hidden h-full hover:shadow-lg transition-all group">
-                  <div className="relative h-48 w-full overflow-hidden">
-                    <div className="absolute top-0 right-0 z-10 bg-red-600 text-white text-xs font-medium py-1 px-2">
-                      NEW
-                    </div>
-                    <Image
-                      src={news.image || "/placeholder.svg?height=192&width=384"}
-                      alt={news.title}
-                      fill
-                      className="object-cover group-hover:scale-105 transition-all"
-                    />
-                  </div>
-                  <div className="p-4">
-                    <h3 className="font-bold text-sm text-gray-800">{news.title}</h3>
-                  </div>
-                </div>
-              </Link>
-            ))}
-          </div>
-        </div>
+        <InternalNews isHomePage />
 
         {/* Tin xã hội */}
-        <div className="mb-8">
-          <div className="bg-[#003366] py-2 px-4 mb-4">
-            <h2 className="text-xl font-bold text-white">Tin xã hội</h2>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-2">
-            {socialNews.map((news) => (
-              <Link
-                key={news.id}
-                href={`/tin-tuc/${news.slug}`}
-                className="flex items-center gap-2 text-sm text-gray-700 hover:text-blue-900 py-1"
-              >
-                <div className="h-1.5 w-1.5 bg-blue-700 rounded-full"></div>
-                <span>{news.title}</span>
-              </Link>
-            ))}
-          </div>
-        </div>
+        <ExternalNews isHomePage />
 
         {/* Hình ảnh công ty */}
         <div>
           <div className="bg-[#003366] py-2 px-4 mb-4">
-            <h2 className="text-xl font-bold text-white">HÌNH ẢNH CÔNG TY</h2>
+            <h2 className="text-3xl font-bold text-white">HÌNH ẢNH CÔNG TY</h2>
           </div>
 
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2">

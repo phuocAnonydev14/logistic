@@ -1,0 +1,103 @@
+{
+  "aboutSection": {
+    "title": "Về Chúng Tôi",
+    "missionTitle": "Sứ mệnh của chúng tôi",
+    "missionPoints": [
+      "Áp dụng công nghệ hiện đại, phát triển logistics xanh và bền vững.",
+      "Liên tục cải tiến hướng đến dịch vụ tối ưu nhất cho khách hàng.",
+      "Tạo ra giá trị cho cổ đông, đối tác và nhân viên."
+    ],
+    "description": "Với đội ngũ chuyên nghiệp và nhiều năm kinh nghiệm trong ngành logistics, chúng tôi cam kết mang đến những giải pháp tối ưu, hiệu quả và thân thiện với môi trường cho mọi nhu cầu vận chuyển của khách hàng.",
+    "imageUrl": "https://hoaphatlogistics.vn/wp-content/uploads/2023/11/DSC07297-scaled.jpg",
+    "highlights": [
+      {
+        "title": "Đội ngũ chuyên nghiệp",
+        "subtitle": "Trên 200 nhân viên"
+      },
+      {
+        "title": "Phạm vi hoạt động",
+        "subtitle": "Toàn quốc & Quốc tế"
+      }
+    ]
+  },
+  "coreValues": {
+    "title": "Giá Trị Cốt Lõi",
+    "description": "Những giá trị cốt lõi định hướng mọi hoạt động và quyết định của chúng tôi",
+    "values": [
+      {
+        "title": "Dịch vụ hoàn hảo",
+        "icon": "star",
+        "points": [
+          "Đặt khách hàng làm trung tâm trong mọi suy nghĩ và hành động.",
+          "Xác định sự tín nhiệm, hài lòng của khách hàng là mục tiêu hàng đầu."
+        ]
+      },
+      {
+        "title": "Học hỏi - Cải tiến liên tục",
+        "icon": "sync-alt",
+        "points": [
+          "Không ngừng cải tiến, sáng tạo trong công việc để tối ưu chi phí và hiệu suất.",
+          "Chủ động thích ứng với thay đổi để tận dụng và phát huy các cơ hội mới.",
+          "Luôn học hỏi, nâng cao năng lực bản thân."
+        ]
+      },
+      {
+        "title": "Chính trực",
+        "icon": "shield-alt",
+        "points": [
+          "Đặt lợi ích của công ty là kim chỉ nam cho mọi hành động và quyết định.",
+          "Luôn cam kết và trách nhiệm trong mọi nhiệm vụ.",
+          "Trung thực, liêm chính."
+        ]
+      },
+      {
+        "title": "Tinh thần đồng đội",
+        "icon": "users",
+        "points": [
+          "Biết lắng nghe và tôn trọng.",
+          "Tin tưởng và đồng cảm.",
+          "Hỗ trợ cùng hoàn thành nhiệm vụ."
+        ]
+      },
+      {
+        "title": "Nhiệt tâm",
+        "icon": "fire",
+        "points": [
+          "Luôn hăng hái, chủ động trong công việc.",
+          "Thực hiện công việc với sự nhiệt huyết và đam mê."
+        ]
+      }
+    ],
+    "cta": {
+      "title": "Bạn cần giải pháp logistics hoàn hảo?",
+      "description": "Hãy liên hệ với chúng tôi ngay hôm nay để được tư vấn các giải pháp tối ưu cho doanh nghiệp của bạn.",
+      "buttonText": "Liên hệ ngay",
+      "buttonLink": "#contact"
+    }
+  },
+  "testimonials": {
+    "title": "Khách Hàng Nói Gì Về Chúng Tôi",
+    "testimonialsList": [
+      {
+        "name": "Nguyễn Thành",
+        "position": "Giám đốc Công ty XYZ",
+        "initials": "NT",
+        "rating": 5,
+        "comment": "Dịch vụ logistics chuyên nghiệp và đáng tin cậy. Chúng tôi đã hợp tác hơn 3 năm và luôn hài lòng với chất lượng dịch vụ. Đặc biệt ấn tượng với giải pháp logistics xanh của công ty."
+      },
+      {
+        "name": "Lê Hương",
+        "position": "Quản lý vận hành - ABC Trading",
+        "initials": "LH",
+        "rating": 4.5,
+        "comment": "Hệ thống theo dõi hàng hóa thời gian thực giúp chúng tôi dễ dàng kiểm soát quá trình vận chuyển. Đội ngũ nhân viên nhiệt tình, chuyên nghiệp và luôn sẵn sàng hỗ trợ khi cần thiết."
+      },{
+        "name": "Lê Hương",
+        "position": "Quản lý vận hành - ABC Trading",
+        "initials": "LH",
+        "rating": 4.5,
+        "comment": "Hệ thống theo dõi hàng hóa thời gian thực giúp chúng tôi dễ dàng kiểm soát quá trình vận chuyển. Đội ngũ nhân viên nhiệt tình, chuyên nghiệp và luôn sẵn sàng hỗ trợ khi cần thiết."
+      }
+    ]
+  }
+}

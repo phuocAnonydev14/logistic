@@ -31,7 +31,7 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="h-5 w-5 text-red-600" />
-                <span className="text-gray-600">hpl@vantaihoaphat.com</span>
+                <span className="text-gray-600">hpl@vantaivntransp.com</span>
               </li>
               <li className="flex items-center gap-3">
                 <Clock className="h-5 w-5 text-red-600" />

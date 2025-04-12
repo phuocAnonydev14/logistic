@@ -3,21 +3,16 @@ import Link from "next/link"
 import { notFound } from "next/navigation"
 import { Calendar, User, Tag, ChevronRight } from "lucide-react"
 import { getNewsBySlug, getRelatedNews } from "@/data/news"
+import {blogService} from "@/services/blog.service";
+import moment from "moment";
 
-interface NewsDetailPageProps {
-  params: {
-    slug: string
-  }
-}
+export default  async function NewsDetailPage({ params }: any) {
+  const slug = (await params).slug
 
-export default function NewsDetailPage({ params }: NewsDetailPageProps) {
-  const news = getNewsBySlug(params.slug)
-
-  if (!news) {
-    notFound()
-  }
-
-  const relatedNews = getRelatedNews(params.slug, 3)
+  const news = await blogService.getBlogDetail(slug)
+  console.log("newsDetail",news)
+  
+  // const relatedNews = getRelatedNews(params.slug, 3)
 
   return (
     <div>
@@ -48,40 +43,22 @@ export default function NewsDetailPage({ params }: NewsDetailPageProps) {
         <div className="flex flex-col lg:flex-row gap-8">
           {/* Main Content */}
           <div className="w-full lg:w-2/3">
-            <article className="bg-white rounded-lg shadow-md overflow-hidden">
+            <article className="bg-white rounded-lg overflow-hidden">
               <div className="relative h-[300px] md:h-[400px] w-full">
-                <Image src={news.image || "/placeholder.svg"} alt={news.title} fill className="object-cover" />
+                <Image src={news?.image || "/placeholder.svg"} alt={news.title} fill className="object-cover" />
               </div>
 
-              <div className="p-6">
+              <div className="py-6">
                 <h1 className="text-2xl md:text-3xl font-bold text-gray-800 mb-4">{news.title}</h1>
-
-                <div className="flex flex-wrap items-center gap-4 text-sm text-gray-500 mb-6">
-                  <div className="flex items-center gap-1">
-                    <Calendar className="h-4 w-4" />
-                    <span>{news.date}</span>
-                  </div>
-                  <div className="flex items-center gap-1">
-                    <User className="h-4 w-4" />
-                    <span>{news.author}</span>
-                  </div>
-                  <span className="text-sm px-3 py-1 bg-blue-100 text-blue-900 rounded-full">{news.category}</span>
-                </div>
+                
 
                 <div className="prose max-w-none" dangerouslySetInnerHTML={{ __html: news.content }} />
-
-                {news.tags && news.tags.length > 0 && (
-                  <div className="mt-8 pt-6 border-t border-gray-200">
-                    <div className="flex items-center flex-wrap gap-2">
-                      <Tag className="h-4 w-4 text-gray-500" />
-                      {news.tags.map((tag, index) => (
-                        <span key={index} className="text-sm px-3 py-1 bg-gray-100 text-gray-700 rounded-full">
-                          {tag}
-                        </span>
-                      ))}
-                    </div>
+                <div className="flex flex-wrap items-center gap-4 text-sm text-gray-500 my-6">
+                  <div className="flex items-center gap-1">
+                    <Calendar className="h-4 w-4" />
+                    <span>{moment(news.createdAt).format("MM-DD-YYYY")}</span>
                   </div>
-                )}
+                </div>
               </div>
             </article>
           </div>
@@ -91,28 +68,28 @@ export default function NewsDetailPage({ params }: NewsDetailPageProps) {
             <div className="bg-white rounded-lg shadow-md overflow-hidden p-6">
               <h2 className="text-xl font-bold text-gray-800 mb-4">Bài viết liên quan</h2>
 
-              <div className="space-y-6">
-                {relatedNews.map((item) => (
-                  <div key={item.id} className="flex gap-4">
-                    <div className="flex-shrink-0 relative w-24 h-24">
-                      <Image
-                        src={item.image || "/placeholder.svg"}
-                        alt={item.title}
-                        fill
-                        className="object-cover rounded-md"
-                      />
-                    </div>
-                    <div>
-                      <Link href={`/tin-tuc/${item.slug}`}>
-                        <h3 className="font-medium text-gray-800 hover:text-blue-900 transition-colors line-clamp-2">
-                          {item.title}
-                        </h3>
-                      </Link>
-                      <p className="text-sm text-gray-500 mt-1">{item.date}</p>
-                    </div>
-                  </div>
-                ))}
-              </div>
+              {/*<div className="space-y-6">*/}
+              {/*  {relatedNews.map((item) => (*/}
+              {/*    <div key={item.id} className="flex gap-4">*/}
+              {/*      <div className="flex-shrink-0 relative w-24 h-24">*/}
+              {/*        <Image*/}
+              {/*          src={item.image || "/placeholder.svg"}*/}
+              {/*          alt={item.title}*/}
+              {/*          fill*/}
+              {/*          className="object-cover rounded-md"*/}
+              {/*        />*/}
+              {/*      </div>*/}
+              {/*      <div>*/}
+              {/*        <Link href={`/tin-tuc/${item.slug}`}>*/}
+              {/*          <h3 className="font-medium text-gray-800 hover:text-blue-900 transition-colors line-clamp-2">*/}
+              {/*            {item.title}*/}
+              {/*          </h3>*/}
+              {/*        </Link>*/}
+              {/*        <p className="text-sm text-gray-500 mt-1">{item.date}</p>*/}
+              {/*      </div>*/}
+              {/*    </div>*/}
+              {/*  ))}*/}
+              {/*</div>*/}
 
               <div className="mt-6 pt-6 border-t border-gray-200">
                 <h2 className="text-xl font-bold text-gray-800 mb-4">Danh mục</h2>
@@ -134,7 +111,7 @@ export default function NewsDetailPage({ params }: NewsDetailPageProps) {
                 <h2 className="text-xl font-bold text-gray-800 mb-4">Liên hệ</h2>
                 <p className="text-gray-700 mb-2">Để được tư vấn chi tiết, vui lòng liên hệ:</p>
                 <p className="text-gray-700 font-medium">Hotline: 0906.362.588</p>
-                <p className="text-gray-700 font-medium">Email: hpl@vantaihoaphat.com</p>
+                <p className="text-gray-700 font-medium">Email: hpl@vantaivntransp.com</p>
               </div>
             </div>
           </div>

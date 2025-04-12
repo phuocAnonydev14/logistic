@@ -12,7 +12,6 @@ export default function ContactPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             <div>
               <h2 className="text-2xl md:text-3xl font-bold text-blue-900 mb-6">Thông tin liên hệ</h2>
-
               <div className="space-y-6 mb-8">
                 <div className="flex items-start gap-4">
                   <div className="bg-blue-100 p-3 rounded-full">
@@ -23,7 +22,6 @@ export default function ContactPage() {
                     <p className="text-gray-600">Số 123 Đường ABC, Quận XYZ, Thành phố Hà Nội</p>
                   </div>
                 </div>
-
                 <div className="flex items-start gap-4">
                   <div className="bg-blue-100 p-3 rounded-full">
                     <Phone className="h-6 w-6 text-blue-900" />
@@ -40,7 +38,7 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h3 className="font-semibold text-lg mb-1">Email</h3>
-                    <p className="text-gray-600">hpl@vantaihoaphat.com</p>
+                    <p className="text-gray-600">hpl@vantaivntransp.com</p>
                   </div>
                 </div>
 

@@ -141,7 +141,7 @@ export default function RecruitmentPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
             <div className="relative h-[300px] md:h-[400px] rounded-lg overflow-hidden">
               <Image
-                src="/recruitment.jpg"
+                src="https://vntransplogistics.vn/wp-content/uploads/2023/11/DSC07297-scaled.jpg"
                 alt="Môi trường làm việc tại Hòa Phát Logistics"
                 fill
                 className="object-cover"

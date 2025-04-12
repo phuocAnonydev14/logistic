@@ -6,7 +6,6 @@ import ServicesSection from "@/components/services-section"
 import CompanyNewsSection from "@/components/company-news-section"
 import PartnersSection from "@/components/partners-section"
 import {HomeCarousel} from "@/components/home-page/banner-carousel";
-import {BlogList} from "@/components/blog/BlogList";
 
 export default function Home() {
   return (

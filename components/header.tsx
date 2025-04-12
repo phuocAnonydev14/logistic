@@ -7,11 +7,14 @@ import { Phone, Clock, Mail, ChevronDown, Facebook, Youtube, Menu, X } from "luc
 import { Button } from "@/components/ui/button"
 import { Sheet, SheetContent } from "@/components/ui/sheet"
 import Logo from "@/components/asset/logo.jpg"
+import {useGetCategories} from "@/hooks/useGetCategories";
+import {Category} from "@/types/app.type";
 
 export default function Header() {
   const [isServicesOpen, setIsServicesOpen] = useState(false)
   const [isNewsOpen, setIsNewsOpen] = useState(false)
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const {data} = useGetCategories({})
 
   return (
     <header className="w-full sticky top-0 z-50 bg-white">
@@ -46,7 +49,7 @@ export default function Header() {
             <Mail className="h-5 w-5 text-red-600" />
             <div>
               <p className="text-xs text-gray-500">Mail liên hệ</p>
-              <p className="font-semibold">hpl@vantaihoaphat.com</p>
+              <p className="font-semibold">hpl@vantaivntransp.com</p>
             </div>
           </div>
 
@@ -91,34 +94,15 @@ export default function Header() {
 
               {isServicesOpen && (
                 <div className="pl-4 mt-2 space-y-2">
-                  <Link
-                    href="/dich-vu/van-tai-duong-bo"
-                    className="block py-1 text-gray-600"
-                    onClick={() => setMobileMenuOpen(false)}
-                  >
-                    Vận tải đường bộ
-                  </Link>
-                  <Link
-                    href="/dich-vu/van-tai-duong-bien"
-                    className="block py-1 text-gray-600"
-                    onClick={() => setMobileMenuOpen(false)}
-                  >
-                    Vận tải đường biển
-                  </Link>
-                  <Link
-                    href="/dich-vu/van-tai-hang-khong"
-                    className="block py-1 text-gray-600"
-                    onClick={() => setMobileMenuOpen(false)}
-                  >
-                    Vận tải hàng không
-                  </Link>
-                  <Link
-                    href="/dich-vu/kho-bai"
-                    className="block py-1 text-gray-600"
-                    onClick={() => setMobileMenuOpen(false)}
-                  >
-                    Dịch vụ kho bãi
-                  </Link>
+                  {data?.map((cate: Category) => {
+                    return <Link
+                      href={`/dich-vu/${cate.slug}`}
+                      className="block py-1 text-gray-600"
+                      onClick={() => setMobileMenuOpen(false)}
+                    >
+                      {cate.name}
+                    </Link>
+                  })}
                 </div>
               )}
             </div>
@@ -181,7 +165,7 @@ export default function Header() {
               <Mail className="h-5 w-5 text-red-600" />
               <div>
                 <p className="text-xs text-gray-500">Mail liên hệ</p>
-                <p className="font-semibold">hpl@vantaihoaphat.com</p>
+                <p className="font-semibold">hpl@vantaivntransp.com</p>
               </div>
             </div>
 
