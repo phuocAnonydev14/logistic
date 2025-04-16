@@ -1,8 +1,6 @@
 import Image from "next/image"
 import Link from "next/link"
-import { notFound } from "next/navigation"
-import { Calendar, User, Tag, ChevronRight } from "lucide-react"
-import { getNewsBySlug, getRelatedNews } from "@/data/news"
+import { Calendar, ChevronRight } from "lucide-react"
 import {blogService} from "@/services/blog.service";
 import moment from "moment";
 
@@ -10,6 +8,7 @@ export default  async function NewsDetailPage({ params }: any) {
   const slug = (await params).slug
 
   const news = await blogService.getBlogDetail(slug)
+  const relatedNews = await blogService.getAllBlogs({filter:JSON.stringify({categoryId:news.categoryId}),page:1,limit:8})
   console.log("newsDetail",news)
   
   // const relatedNews = getRelatedNews(params.slug, 3)
@@ -68,28 +67,20 @@ export default  async function NewsDetailPage({ params }: any) {
             <div className="bg-white rounded-lg shadow-md overflow-hidden p-6">
               <h2 className="text-xl font-bold text-gray-800 mb-4">Bài viết liên quan</h2>
 
-              {/*<div className="space-y-6">*/}
-              {/*  {relatedNews.map((item) => (*/}
-              {/*    <div key={item.id} className="flex gap-4">*/}
-              {/*      <div className="flex-shrink-0 relative w-24 h-24">*/}
-              {/*        <Image*/}
-              {/*          src={item.image || "/placeholder.svg"}*/}
-              {/*          alt={item.title}*/}
-              {/*          fill*/}
-              {/*          className="object-cover rounded-md"*/}
-              {/*        />*/}
-              {/*      </div>*/}
-              {/*      <div>*/}
-              {/*        <Link href={`/tin-tuc/${item.slug}`}>*/}
-              {/*          <h3 className="font-medium text-gray-800 hover:text-blue-900 transition-colors line-clamp-2">*/}
-              {/*            {item.title}*/}
-              {/*          </h3>*/}
-              {/*        </Link>*/}
-              {/*        <p className="text-sm text-gray-500 mt-1">{item.date}</p>*/}
-              {/*      </div>*/}
-              {/*    </div>*/}
-              {/*  ))}*/}
-              {/*</div>*/}
+              <div className="space-y-3">
+                {relatedNews.filter(item => item.id !== news.id).map((item, index) => index < 5 && (
+                  <div key={item.id} className="flex gap-2 items-center">
+                    <div>
+                      <Link href={`/tin-tuc/${item.slug}`}>
+                        <h3 className="font-medium text-gray-800 hover:text-blue-900 transition-colors line-clamp-2">
+                          {item.title}
+                        </h3>
+                      </Link>
+                      <p className="text-sm text-gray-500 mt-1">{item.date}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
 
               <div className="mt-6 pt-6 border-t border-gray-200">
                 <h2 className="text-xl font-bold text-gray-800 mb-4">Danh mục</h2>

@@ -2,56 +2,22 @@
 
 import {useEffect, useRef, useState} from "react"
 import Image from "next/image"
-
-const partners = [
-	{
-		id: 1,
-		name: 'Microsoft',
-		logo: "https://cdn-icons-png.flaticon.com/128/732/732221.png"
-	},
-	{
-		id: 2,
-		name: 'Microsoft',
-		logo: "https://cdn-icons-png.flaticon.com/128/732/732221.png"
-	},
-	{
-		id: 3,
-		name: 'Microsoft',
-		logo: "https://cdn-icons-png.flaticon.com/128/732/732221.png"
-	},
-	{
-		id: 4,
-		name: 'Microsoft',
-		logo: "https://cdn-icons-png.flaticon.com/128/732/732221.png"
-	},
-	{
-		id: 5,
-		name: 'Microsoft',
-		logo: "https://cdn-icons-png.flaticon.com/128/732/732221.png"
-	},
-	{
-		id: 6,
-		name: 'Microsoft',
-		logo: "https://cdn-icons-png.flaticon.com/128/732/732221.png"
-	},
-]
+import dataJson from "@/components/home-page/home-page.json"
 
 export default function PartnersSection() {
-	const [duplicatedPartners, setDuplicatedPartners] = useState([...partners, ...partners])
+	const [duplicatedPartners, setDuplicatedPartners] = useState([...dataJson.partners, ...dataJson.partners])
 	const scrollRef = useRef<HTMLDivElement>(null)
 	const [scrollWidth, setScrollWidth] = useState(0)
 	const [containerWidth, setContainerWidth] = useState(0)
 	
 	useEffect(() => {
 		if (scrollRef.current) {
-			// Tính toán chiều rộng của container và nội dung để điều chỉnh animation
 			const scrollContainer = scrollRef.current
 			setScrollWidth(scrollContainer.scrollWidth / 2)
 			setContainerWidth(scrollContainer.offsetWidth)
 		}
 	}, [])
 	
-	// Tính toán thời gian animation dựa trên chiều rộng
 	const animationDuration = scrollWidth > 0 ? scrollWidth / 50 : 20 // Tốc độ chạy
 	
 	return (

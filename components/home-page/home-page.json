@@ -1,0 +1,40 @@
+{
+  "carouselImage": [
+    "https://images.pexels.com/photos/2681883/pexels-photo-2681883.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    "https://images.pexels.com/photos/5998117/pexels-photo-5998117.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    "https://images.pexels.com/photos/20337840/pexels-photo-20337840/free-photo-of-view-of-a-loft-style-living-room-with-a-brown-leather-sofa.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+  ],
+  "about": {
+    "content": [
+      "Hòa Phát Logistics vinh hạnh được coi là đối tác tin cậy hàng đầu của nhiều thương hiệu lớn như: Toll,\n              Gemadep, Taisun, Tân Á, Vigracera, Habeco, và nhiều đối tác khác trong lĩnh vực vận tải và logistics.",
+      "Với đội ngũ nhân viên chuyên nghiệp, trang thiết bị hiện đại và mạng lưới rộng khắp, chúng tôi cam kết\n              mang đến dịch vụ vận tải và logistics chất lượng cao, đáp ứng mọi nhu cầu của khách hàng."
+    ],
+    "youtube": "https://www.youtube.com/embed/DRZymVT5i6w"
+  },
+  "images": [
+    "https://images.pexels.com/photos/5998117/pexels-photo-5998117.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    "https://images.pexels.com/photos/5998117/pexels-photo-5998117.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    "https://images.pexels.com/photos/5998117/pexels-photo-5998117.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    "https://images.pexels.com/photos/5998117/pexels-photo-5998117.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    "https://images.pexels.com/photos/5998117/pexels-photo-5998117.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    "https://images.pexels.com/photos/5998117/pexels-photo-5998117.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+  ],
+  "partners": [
+    {
+      "name": "Toll",
+      "image": "https://www.toll.com.au/content/dam/toll-com-au/images/logos/toll-logo-white.svg"
+    },
+    {
+      "name": "Gemadep",
+      "image": "https://www.gemadep.com/wp-content/uploads/2021/07/logo-gemadep-white.svg"
+    },
+    {
+      "name": "Tân Á",
+      "image": "https://www.tanaplast.com.vn/wp-content/uploads/2021/07/logo-tan-aplast-white.svg"
+    },
+    {
+      "name": "Taisun",
+      "image": "https://www.taisun.com.vn/wp-content/uploads/2021/07/logo-taisun-white.svg"
+    }
+  ]
+}

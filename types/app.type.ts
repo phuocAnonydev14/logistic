@@ -1,7 +1,7 @@
 export interface Category extends BaseEntity{
   name: string;
   slug: string;
-  image: string;
+  thumbnail: ImageType
   description?: string;
   content?: string
 }
@@ -31,8 +31,6 @@ export interface ImageType {
   id: number;
   imageUrl: string;
   type: string;
-  collect_id: number;
-  set_id: number;
 }
 
 

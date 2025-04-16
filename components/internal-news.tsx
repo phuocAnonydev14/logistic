@@ -2,7 +2,6 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import {companyNews} from "@/components/company-news-section";
 import {useQuery} from "@tanstack/react-query";
 import {blogService} from "@/services/blog.service";
 
@@ -36,7 +35,7 @@ export const InternalNews = ({isHomePage}: { isHomePage?: boolean }) => {
 									NEW
 								</div>
 								<Image
-									src={news.image || "/placeholder.svg?height=192&width=384"}
+									src={news?.thumbnail?.imageUrl || "/placeholder.svg?height=192&width=384"}
 									alt={news.title}
 									fill
 									className="object-cover group-hover:scale-105 transition-all"

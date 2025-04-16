@@ -3,10 +3,9 @@
 import { useState } from "react"
 import Link from "next/link"
 import Image from "next/image"
-import { Phone, Clock, Mail, ChevronDown, Facebook, Youtube, Menu, X } from "lucide-react"
+import { Phone, Clock, Mail, ChevronDown,  Menu, X } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Sheet, SheetContent } from "@/components/ui/sheet"
-import Logo from "@/components/asset/logo.jpg"
 import {useGetCategories} from "@/hooks/useGetCategories";
 import {Category} from "@/types/app.type";
 
@@ -205,18 +204,14 @@ export default function Header() {
 
                 {isServicesOpen && (
                   <div className="absolute top-full left-0 bg-white text-gray-800 shadow-md min-w-[200px] z-10">
-                    <Link href="/dich-vu/van-tai-duong-bo" className="block px-4 py-2 hover:bg-gray-100">
-                      Vận tải đường bộ
-                    </Link>
-                    <Link href="/dich-vu/van-tai-duong-bien" className="block px-4 py-2 hover:bg-gray-100">
-                      Vận tải đường biển
-                    </Link>
-                    <Link href="/dich-vu/van-tai-hang-khong" className="block px-4 py-2 hover:bg-gray-100">
-                      Vận tải hàng không
-                    </Link>
-                    <Link href="/dich-vu/kho-bai" className="block px-4 py-2 hover:bg-gray-100">
-                      Dịch vụ kho bãi
-                    </Link>
+                    {data?.map((cate: Category) => {
+                      return <Link
+                        href={`/dich-vu/${cate.slug}`}
+                        className="block px-4 py-2 hover:bg-gray-100"
+                      >
+                        {cate.name}
+                      </Link>
+                    })}
                   </div>
                 )}
               </li>

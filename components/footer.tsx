@@ -103,7 +103,7 @@ export default function Footer() {
             <h3 className="text-lg font-bold text-gray-800 mb-4">Hotline</h3>
             <div className="bg-red-600 text-white px-4 py-2 rounded-md inline-flex items-center gap-2">
               <Phone className="h-5 w-5" />
-              <span className="font-bold">0906 362 588</span>
+              <span className="font-bold">0902.190.866</span>
             </div>
           </div>
         </div>

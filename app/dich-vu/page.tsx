@@ -4,10 +4,10 @@ import { services } from "@/data/services"
 
 export default function ServicesPage() {
   return (
-    <div>
+    <div className="container">
       {/* Page Title */}
       <div className="bg-gray-100 py-8">
-        <div className="container mx-auto px-4">
+        <div className="mx-auto px-4">
           <h1 className="text-3xl font-bold text-gray-800">DỊCH VỤ</h1>
         </div>
       </div>
