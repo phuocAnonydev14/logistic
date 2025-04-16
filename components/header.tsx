@@ -21,7 +21,7 @@ export default function Header() {
       <div className="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
         <div className="flex items-center justify-between w-full md:w-auto">
           <Link href="/" className="mr-6">
-            <Image src={Logo.src} alt="Hòa Phát Logistics" width={220} height={60} className="h-20 w-auto" />
+            <Image src="/logo.png" alt="Hòa Phát Logistics" width={220} height={60} className="h-20 w-auto" />
           </Link>
           <Button variant="ghost" size="icon" className="md:hidden" onClick={() => setMobileMenuOpen(true)}>
             <Menu className="h-6 w-6" />
@@ -33,7 +33,7 @@ export default function Header() {
             <Phone className="h-5 w-5 text-red-600" />
             <div>
               <p className="text-xs text-gray-500">Hỗ trợ dịch vụ</p>
-              <p className="font-semibold">0906.362.588</p>
+              <p className="font-semibold">0902.190.866</p>
             </div>
           </div>
 
@@ -49,7 +49,7 @@ export default function Header() {
             <Mail className="h-5 w-5 text-red-600" />
             <div>
               <p className="text-xs text-gray-500">Mail liên hệ</p>
-              <p className="font-semibold">hpl@vantaivntransp.com</p>
+              <p className="font-semibold">daphuongthucvntransp@gmail.com</p>
             </div>
           </div>
 
@@ -157,7 +157,7 @@ export default function Header() {
               <Phone className="h-5 w-5 text-red-600" />
               <div>
                 <p className="text-xs text-gray-500">Hỗ trợ dịch vụ</p>
-                <p className="font-semibold">0906.362.588</p>
+                <p className="font-semibold">0902.190.866</p>
               </div>
             </div>
 
@@ -165,7 +165,7 @@ export default function Header() {
               <Mail className="h-5 w-5 text-red-600" />
               <div>
                 <p className="text-xs text-gray-500">Mail liên hệ</p>
-                <p className="font-semibold">hpl@vantaivntransp.com</p>
+                <p className="font-semibold">daphuongthucvntransp@gmail.com</p>
               </div>
             </div>
 
@@ -248,7 +248,7 @@ export default function Header() {
             </ul>
 
             <div className="hidden md:flex items-center gap-3">
-              <Link href="https://zalo.me" target="_blank" rel="noopener noreferrer">
+              <Link href="https://zalo.me/0902190866" target="_blank" rel="noopener noreferrer">
                 <Image src="/zalo-icon.png" alt="Zalo" width={24} height={24} />
               </Link>
               <Link href="https://facebook.com" target="_blank" rel="noopener noreferrer">

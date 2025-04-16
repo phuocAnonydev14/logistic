@@ -114,7 +114,7 @@ export const newsItems: NewsType[] = [
       
       <p>Tại Hòa Phát Logistics, chúng tôi luôn sẵn sàng tư vấn và cung cấp các giải pháp tối ưu chi phí vận chuyển cho doanh nghiệp. Với kinh nghiệm nhiều năm trong ngành và mạng lưới rộng khắp, chúng tôi cam kết mang đến cho khách hàng dịch vụ chất lượng cao với chi phí hợp lý nhất.</p>
       
-      <p>Để được tư vấn chi tiết, vui lòng liên hệ với chúng tôi qua hotline 0906.362.588 hoặc email hpl@vantaivntransp.com.</p>
+      <p>Để được tư vấn chi tiết, vui lòng liên hệ với chúng tôi qua hotline 0902.190.866 hoặc email daphuongthucvntransp@gmail.com.</p>
     `,
     image: "/news-4.jpg",
     date: "10/06/2023",

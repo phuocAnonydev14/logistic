@@ -3,6 +3,7 @@ import Link from "next/link"
 import { MapPin, Clock, Banknote } from "lucide-react"
 import PageHeader from "@/components/page-header"
 import { Button } from "@/components/ui/button"
+import dataJson from './why-choose-us.json'
 
 const jobs = [
   {
@@ -135,46 +136,29 @@ export default function RecruitmentPage() {
           </div>
         </div>
       </section>
-
+      
       <section className="py-12 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
             <div className="relative h-[300px] md:h-[400px] rounded-lg overflow-hidden">
               <Image
-                src="https://vntransplogistics.vn/wp-content/uploads/2023/11/DSC07297-scaled.jpg"
-                alt="Môi trường làm việc tại Hòa Phát Logistics"
+                src={dataJson.image.src}
+                alt={dataJson.image.alt}
                 fill
                 className="object-cover"
               />
             </div>
-
+            
             <div>
-              <h2 className="text-2xl md:text-3xl font-bold text-blue-900 mb-6">Tại sao chọn Hòa Phát Logistics?</h2>
-
+              <h2 className="text-2xl md:text-3xl font-bold text-blue-900 mb-6">{dataJson.title}</h2>
+              
               <div className="space-y-4">
-                <div className="bg-white p-4 rounded-lg shadow-sm">
-                  <h3 className="font-semibold text-lg mb-2">Môi trường làm việc chuyên nghiệp</h3>
-                  <p className="text-gray-600">
-                    Chúng tôi xây dựng môi trường làm việc chuyên nghiệp, năng động và sáng tạo, nơi mỗi nhân viên đều
-                    được tôn trọng và phát huy tối đa năng lực.
-                  </p>
-                </div>
-
-                <div className="bg-white p-4 rounded-lg shadow-sm">
-                  <h3 className="font-semibold text-lg mb-2">Cơ hội phát triển nghề nghiệp</h3>
-                  <p className="text-gray-600">
-                    Tại Hòa Phát Logistics, chúng tôi luôn tạo điều kiện để nhân viên phát triển sự nghiệp thông qua các
-                    chương trình đào tạo và cơ hội thăng tiến.
-                  </p>
-                </div>
-
-                <div className="bg-white p-4 rounded-lg shadow-sm">
-                  <h3 className="font-semibold text-lg mb-2">Chế độ đãi ngộ hấp dẫn</h3>
-                  <p className="text-gray-600">
-                    Chúng tôi cam kết mang đến chế độ lương thưởng cạnh tranh và các phúc lợi hấp dẫn để đảm bảo cuộc
-                    sống của nhân viên.
-                  </p>
-                </div>
+                {dataJson.reasons.map((item, index) => (
+                  <div key={index} className="bg-white p-4 rounded-lg shadow-sm">
+                    <h3 className="font-semibold text-lg mb-2">{item.title}</h3>
+                    <p className="text-gray-600">{item.description}</p>
+                  </div>
+                ))}
               </div>
             </div>
           </div>

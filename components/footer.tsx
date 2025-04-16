@@ -27,11 +27,11 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="h-5 w-5 text-red-600" />
-                <span className="text-gray-600">0906.362.588</span>
+                <span className="text-gray-600">0902.190.866</span>
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="h-5 w-5 text-red-600" />
-                <span className="text-gray-600">hpl@vantaivntransp.com</span>
+                <span className="text-gray-600">daphuongthucvntransp@gmail.com</span>
               </li>
               <li className="flex items-center gap-3">
                 <Clock className="h-5 w-5 text-red-600" />
@@ -91,7 +91,7 @@ export default function Footer() {
                 <Youtube className="h-5 w-5" />
               </Link>
               <Link
-                href="https://zalo.me"
+                href="https://zalo.me/0902190866"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-blue-500 text-white p-2 rounded-full hover:bg-blue-700"
