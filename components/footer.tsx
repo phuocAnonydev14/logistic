@@ -10,10 +10,10 @@ export default function Footer() {
           <div>
             <h3 className="text-lg font-bold text-gray-800 mb-4">Về chúng tôi</h3>
             <Link href="/" className="inline-block mb-4">
-              <Image src="/logo.jpg" alt="Hòa Phát Logistics" width={150} height={75} className="h-16 w-auto" />
+              <Image src="/logo.png" alt="Vntransp Logistics" width={150} height={75} className="h-16 w-auto" />
             </Link>
             <p className="text-gray-600 mb-4">
-              Hòa Phát Logistics - Đối tác tin cậy trong lĩnh vực vận tải và logistics, mang đến giải pháp vận chuyển
+              Vntransp Logistics - Đối tác tin cậy trong lĩnh vực vận tải và logistics, mang đến giải pháp vận chuyển
               tối ưu cho doanh nghiệp của bạn.
             </p>
           </div>
@@ -23,7 +23,7 @@ export default function Footer() {
             <ul className="space-y-3">
               <li className="flex items-start gap-3">
                 <MapPin className="h-5 w-5 text-red-600 mt-0.5" />
-                <span className="text-gray-600">Số 123 Đường ABC, Quận XYZ, Thành phố Hà Nội</span>
+                <span className="text-gray-600">162 Đường Phương Liệt, Phường Phương Liệt, Quận Thanh Xuân, Thành phố Hà Nội</span>
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="h-5 w-5 text-red-600" />
@@ -110,7 +110,7 @@ export default function Footer() {
 
         <div className="border-t border-gray-300 pt-6">
           <p className="text-center text-gray-600">
-            © {new Date().getFullYear()} Hòa Phát Logistics. Tất cả các quyền được bảo lưu.
+            © {new Date().getFullYear()} Vntransp Logistics. Tất cả các quyền được bảo lưu.
           </p>
         </div>
       </div>

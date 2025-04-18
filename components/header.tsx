@@ -20,7 +20,7 @@ export default function Header() {
       <div className="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
         <div className="flex items-center justify-between w-full md:w-auto">
           <Link href="/" className="mr-6">
-            <Image src="/logo.png" alt="Hòa Phát Logistics" width={220} height={60} className="h-20 w-auto" />
+            <Image src="/logo.png" alt="Vntransp Logistics" width={220} height={60} className="h-20 w-auto" />
           </Link>
           <Button variant="ghost" size="icon" className="md:hidden" onClick={() => setMobileMenuOpen(true)}>
             <Menu className="h-6 w-6" />
@@ -63,7 +63,7 @@ export default function Header() {
         <SheetContent side="left" className="w-[300px] sm:w-[350px]">
           <div className="flex justify-between items-center mb-6">
             <Link href="/" onClick={() => setMobileMenuOpen(false)}>
-              <Image src="/logo.png" alt="Hòa Phát Logistics" width={100} height={50} className="h-12 w-auto" />
+              <Image src="/logo.png" alt="Vntransp Logistics" width={100} height={50} className="h-12 w-auto" />
             </Link>
             <Button variant="ghost" size="icon" onClick={() => setMobileMenuOpen(false)}>
               <X className="h-5 w-5" />

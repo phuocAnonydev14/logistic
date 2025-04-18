@@ -36,15 +36,14 @@ export default function PartnersSection() {
 						{duplicatedPartners.map((partner, index) => (
 							<div
 								key={`${partner.id}-${index}`}
-								className="flex-shrink-0 bg-white  flex flex-col  justify-center items-center"
+								className="flex-shrink-0 bg-white  flex flex-col justify-center items-center"
 								style={{minWidth: "150px"}}
 							>
-								<div className="relative h-16 w-full">
-									<Image
-										src={partner.logo || "/placeholder.svg?height=64&width=150"}
+								<div className="relative h-16">
+									<img
+										src={partner.image || "/placeholder.svg?height=64&width=150"}
 										alt={partner.name}
-										fill
-										className="object-contain"
+										className="object-cover w-28 h-auto"
 									/>
 								</div>
 								<p className="mt-1 font-semibold text-sm">{partner.name}</p>

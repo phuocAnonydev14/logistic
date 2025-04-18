@@ -91,10 +91,10 @@ export default function RecruitmentPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center mb-12">
             <h2 className="text-2xl md:text-3xl font-bold text-blue-900 mb-4">
-              Cơ hội nghề nghiệp tại Hòa Phát Logistics
+              Cơ hội nghề nghiệp tại Vntransp Logistics
             </h2>
             <p className="text-gray-600">
-              Hòa Phát Logistics luôn tìm kiếm những nhân tài để cùng nhau phát triển. Chúng tôi cung cấp môi trường làm
+              Vntransp Logistics luôn tìm kiếm những nhân tài để cùng nhau phát triển. Chúng tôi cung cấp môi trường làm
               việc chuyên nghiệp, năng động và nhiều cơ hội thăng tiến.
             </p>
           </div>

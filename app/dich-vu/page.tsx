@@ -30,7 +30,7 @@ export default function ServicesPage() {
         <div className="max-w-3xl mx-auto text-center mb-12">
           <h2 className="text-2xl md:text-3xl font-bold text-blue-900 mb-4">Dịch vụ của chúng tôi</h2>
           <p className="text-gray-600">
-            Hòa Phát Logistics cung cấp các giải pháp vận tải và logistics toàn diện, đáp ứng mọi nhu cầu vận chuyển và
+            Vntransp Logistics cung cấp các giải pháp vận tải và logistics toàn diện, đáp ứng mọi nhu cầu vận chuyển và
             lưu trữ hàng hóa của doanh nghiệp với chất lượng cao và chi phí hợp lý.
           </p>
         </div>

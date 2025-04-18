@@ -9,10 +9,36 @@ import {MainLayout} from "@/components/MainLayout";
 const inter = Inter({subsets: ["latin"]})
 
 export const metadata: Metadata = {
-	title: "Hòa Phát Logistics - Dịch vụ vận tải & logistics",
-	description: "Hòa Phát Logistics - Đối tác tin cậy trong lĩnh vực vận tải và logistics",
-	generator: 'v0.dev'
-}
+	title: {
+		template: '%s | Vntransp Logistics - Dịch vụ vận tải & logistics',
+		default: 'Vntransp Logistics - Dịch vụ vận tải & logistics',
+	},
+	description: "Vntransp Logistics - Đối tác tin cậy trong lĩnh vực vận tải và logistics",
+	keywords: ['Vntransp', 'logistic'],
+	openGraph: {
+		title: 'Vntransp Logistics',
+		description: 'Vntransp Logistics - Đối tác tin cậy trong lĩnh vực vận tải và logistics',
+		siteName: 'vntransp',
+		images: [
+			{
+				url: '/logo.png',
+				width: 1200,
+				height: 630,
+				alt: 'Ảnh Open Graph',
+			},
+		],
+		locale: 'vi_VN',
+		type: 'website',
+	},
+	robots: {
+		index: true,
+		follow: true,
+		nocache: false,
+	},
+	icons: {
+		icon: '/logo-short.ico',
+	},
+};
 
 export default function RootLayout({
 																		 children,

@@ -61,14 +61,14 @@ export default function AboutPage() {
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {coreValues.values.map((value, index) => (
+            {coreValues.values.map((value, index) => value.title && (
               <div key={index} className="bg-white border border-gray-200 rounded-xl p-6 hover:shadow-lg">
                 <div className="w-16 h-16 rounded-full bg-blue-100 flex items-center justify-center mb-6">
                   <i className={`fas fa-${value.icon} text-blue-600 text-2xl`}></i>
                 </div>
                 <h3 className="text-xl font-semibold mb-3">{value.title}</h3>
                 <ul className="space-y-2 text-gray-600">
-                  {value.points.map((point, i) => (
+                  {value?.points?.map((point, i) => (
                     <li key={i} className="flex items-start">
                       <span className="text-blue-600 mr-2"><i className="fas fa-check text-sm mt-1"></i></span>
                       <p>{point}</p>

@@ -8,7 +8,7 @@ export default function AboutSection() {
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row gap-8 items-center">
           <div className="md:w-1/2">
-            <h2 className="text-3xl font-bold text-gray-800 mb-6">Hòa Phát Logistics</h2>
+            <h2 className="text-3xl font-bold text-gray-800 mb-6">Vntransp Logistics</h2>
             {dataJson.about.content.map((item, index) => (
               <p key={index} className="text-gray-600 mb-4">
                 {item}
@@ -27,7 +27,7 @@ export default function AboutSection() {
                 width="100%"
                 height="100%"
                 src={dataJson.about.youtube}
-                title="Hòa Phát Logistics"
+                title="Vntransp Logistics"
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen

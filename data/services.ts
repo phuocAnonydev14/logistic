@@ -104,7 +104,7 @@ export const services: ServiceType[] = [
       "Báo cáo giao nhận chi tiết",
     ],
     content:
-      "Dịch vụ vận tải phân phối của Hòa Phát Logistics cung cấp giải pháp vận chuyển và phân phối hàng hóa tới các điểm bán lẻ, đại lý, cửa hàng trên toàn quốc. Với mạng lưới rộng khắp và đội xe đa dạng, chúng tôi đảm bảo hàng hóa của khách hàng được phân phối đến đúng địa điểm, đúng thời gian với chi phí tối ưu.",
+      "Dịch vụ vận tải phân phối của Vntransp Logistics cung cấp giải pháp vận chuyển và phân phối hàng hóa tới các điểm bán lẻ, đại lý, cửa hàng trên toàn quốc. Với mạng lưới rộng khắp và đội xe đa dạng, chúng tôi đảm bảo hàng hóa của khách hàng được phân phối đến đúng địa điểm, đúng thời gian với chi phí tối ưu.",
     images: ["/van-tai-phan-phoi.jpg"],
     process: {
       title: "Quy trình phân phối hàng hóa",
@@ -119,7 +119,7 @@ export const services: ServiceType[] = [
         },
         {
           title: "Nhận hàng tại kho",
-          description: "Nhận hàng tại kho của khách hàng hoặc kho của Hòa Phát Logistics",
+          description: "Nhận hàng tại kho của khách hàng hoặc kho của Vntransp Logistics",
         },
         {
           title: "Phân loại hàng hóa",
@@ -169,7 +169,7 @@ export const services: ServiceType[] = [
       "Thủ tục hải quan trọn gói",
     ],
     content:
-      "Dịch vụ vận tải đường biển của Hòa Phát Logistics cung cấp giải pháp vận chuyển hàng hóa bằng đường biển nội địa và quốc tế, phù hợp với hàng hóa có khối lượng lớn, tiết kiệm chi phí. Với mạng lưới đối tác rộng khắp và đội ngũ nhân viên giàu kinh nghiệm, chúng tôi cam kết mang đến dịch vụ vận tải đường biển chất lượng cao, đáp ứng mọi nhu cầu vận chuyển của khách hàng.",
+      "Dịch vụ vận tải đường biển của Vntransp Logistics cung cấp giải pháp vận chuyển hàng hóa bằng đường biển nội địa và quốc tế, phù hợp với hàng hóa có khối lượng lớn, tiết kiệm chi phí. Với mạng lưới đối tác rộng khắp và đội ngũ nhân viên giàu kinh nghiệm, chúng tôi cam kết mang đến dịch vụ vận tải đường biển chất lượng cao, đáp ứng mọi nhu cầu vận chuyển của khách hàng.",
     images: ["/placeholder.svg?height=400&width=800"],
     process: {
       title: "Quy trình vận chuyển đường biển",

@@ -8,7 +8,7 @@ const slides = [
   {
     id: 1,
     image: "/hero-1.jpg",
-    alt: "Hòa Phát Logistics Team",
+    alt: "Vntransp Logistics Team",
   },
   {
     id: 2,
