@@ -9,9 +9,6 @@ export default  async function NewsDetailPage({ params }: any) {
 
   const news = await blogService.getBlogDetail(slug)
   const relatedNews = await blogService.getAllBlogs({filter:JSON.stringify({categoryId:news.categoryId}),page:1,limit:8})
-  console.log("newsDetail",news)
-  
-  // const relatedNews = getRelatedNews(params.slug, 3)
 
   return (
     <div>

@@ -1,38 +1,29 @@
-import Image from "next/image"
 import Link from "next/link"
 import { ChevronRight } from "lucide-react"
 import { notFound } from "next/navigation"
 import ServiceSidebar from "@/components/service-sidebar"
-import { getServiceBySlug } from "@/data/services"
 import {categoryService} from "@/services/category.service";
 import parse from "html-react-parser";
+import {Category} from "@/types/app.type";
 
-interface ServicePageProps {
-  params: {
-    slug: string
-  }
-}
 
 export default async function ServicePage({ params }: any) {
   const {
     slug
   } = await params;
-  console.log("slug", slug)
-  const service = await categoryService.getCategoryDetail(slug)
+  const service: Category = await categoryService.getCategoryDetail(slug)
 
   if (!service) {
     console.error(`Service with slug "${params.slug}" not found`)
     notFound()
   }
-  
-  console.log("service", service)
 
   return (
     <div>
       {/* Page Title */}
       <div className="bg-gray-100 py-8">
         <div className="container mx-auto px-4">
-          <h1 className="text-3xl font-bold text-gray-800">{service.title}</h1>
+          <h1 className="text-3xl font-bold text-gray-800">{service.name}</h1>
         </div>
       </div>
 
@@ -56,7 +47,7 @@ export default async function ServicePage({ params }: any) {
         <div className="flex flex-col md:flex-row gap-8">
           {/* Sidebar */}
           <div className="w-full md:w-1/4">
-            <ServiceSidebar activeService={service.id} />
+            <ServiceSidebar activeService={service.id.toString()} />
           </div>
 
           {/* Main Content */}

@@ -8,7 +8,6 @@ import parse from "html-react-parser";
 export default function ServicesSection() {
 
   const {data} = useGetCategories({})
-  console.log("data", data)
   
   return (
     <section className="py-16 bg-gray-50">
