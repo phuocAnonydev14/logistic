@@ -23,16 +23,17 @@ export default function AboutSection() {
 
           <div className="md:w-1/2">
             <div className="relative w-full aspect-video rounded-lg overflow-hidden">
-              <iframe
-                width="100%"
-                height="100%"
-                src={dataJson.about.youtube}
-                title="Vntransp Logistics"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-                className="absolute inset-0"
-              ></iframe>
+              {/*<iframe*/}
+              {/*  width="100%"*/}
+              {/*  height="100%"*/}
+              {/*  src={dataJson.about.youtube}*/}
+              {/*  title="Vntransp Logistics"*/}
+              {/*  frameBorder="0"*/}
+              {/*  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"*/}
+              {/*  allowFullScreen*/}
+              {/*  className="absolute inset-0"*/}
+              {/*></iframe>*/}
+              <img src="https://images.pexels.com/photos/6379249/pexels-photo-6379249.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" className="size-full object-cover" />
             </div>
           </div>
         </div>

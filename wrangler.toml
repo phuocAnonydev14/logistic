@@ -8,3 +8,6 @@
 
   [vars]
   NEXT_PUBLIC_BASE_URL="https://vntranspbackend-production.up.railway.app/v1"
+
+  [observability.logs]
+  enabled = true
