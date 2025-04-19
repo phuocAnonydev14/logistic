@@ -1,5 +1,5 @@
  main = ".open-next/worker.js"
-  name = "logistic"
+  name = "vntransp"
   compatibility_date = "2025-03-25"
   compatibility_flags = ["nodejs_compat"]
   [assets]
@@ -7,4 +7,4 @@
   binding = "ASSETS"
 
   [vars]
-  NEXT_PUBLIC_BASE_URL=http://vntranspbackend-production.up.railway.app/v1
+  NEXT_PUBLIC_BASE_URL="https://vntranspbackend-production.up.railway.app/v1"

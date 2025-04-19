@@ -23,7 +23,7 @@ class HttpService {
   private readonly baseURL: string;
 
   constructor(customBaseUrl?: string) {
-    this.baseURL = customBaseUrl || process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:3001/v1";
+    this.baseURL = "https://vntranspbackend-production.up.railway.app/v1";
 
     // Create and configure axios instance
     this.http =

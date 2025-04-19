@@ -25,7 +25,7 @@ export async function generateMetadata(
 	const parentMetadata = await parent;
 	
 	// Base URL for absolute URLs
-	const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://example.com';
+	// const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://example.com';
 	
 	// Default values
 	const {
@@ -41,7 +41,7 @@ export async function generateMetadata(
 	const ogImageUrl = image.startsWith('http') ? image : `${baseUrl}${image}`;
 	
 	// Create full canonical URL
-	const url = `${baseUrl}${pathname}`;
+	// const url = `${baseUrl}${pathname}`;
 	
 	return {
 		// Basic metadata
@@ -98,7 +98,7 @@ export async function generateMetadata(
 		openGraph: {
 			title,
 			description,
-			url,
+			// url,
 			siteName: 'Your Site Name',
 			images: [
 				{
