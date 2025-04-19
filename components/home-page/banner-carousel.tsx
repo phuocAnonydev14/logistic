@@ -12,13 +12,7 @@ import {
 } from "@/components/ui/carousel";
 import {useEffect, useState} from "react";
 import Image from "next/image";
-
-
-const images = [
-	'https://images.pexels.com/photos/2681883/pexels-photo-2681883.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-	'https://images.pexels.com/photos/5998117/pexels-photo-5998117.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-	'https://images.pexels.com/photos/20337840/pexels-photo-20337840/free-photo-of-view-of-a-loft-style-living-room-with-a-brown-leather-sofa.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'
-]
+import dataJson from "./home-page.json"
 
 export function HomeCarousel() {
 	
@@ -42,7 +36,7 @@ export function HomeCarousel() {
 				loop: true,
 			}}>
 			<CarouselContent className="relative h-full">
-				{images.map((image, index) => (
+				{dataJson.carouselImage.map((image, index) => (
 					<CarouselItem key={index} className="h-full">
 						<div
 							className="flex justify-center p-0"
