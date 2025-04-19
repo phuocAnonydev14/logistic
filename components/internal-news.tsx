@@ -31,9 +31,9 @@ export const InternalNews = ({isHomePage}: { isHomePage?: boolean }) => {
 						<div
 							className="bg-white border border-gray-200 overflow-hidden h-full hover:shadow-lg transition-all group">
 							<div className="relative h-48 w-full overflow-hidden">
-								<div className="absolute top-0 right-0 z-10 bg-red-600 text-white text-xs font-medium py-1 px-2">
+								{index < 3 && <div className="absolute top-0 right-0 z-10 bg-red-600 text-white text-xs font-medium py-1 px-2">
 									NEW
-								</div>
+								</div>}
 								<Image
 									src={news?.thumbnail?.imageUrl || "/placeholder.svg?height=192&width=384"}
 									alt={news.title}
