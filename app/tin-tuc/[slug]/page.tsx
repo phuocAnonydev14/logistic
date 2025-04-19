@@ -101,7 +101,7 @@ export default  async function NewsDetailPage({ params }: any) {
               <div className="mt-6 pt-6 border-t border-gray-200">
                 <h2 className="text-xl font-bold text-gray-800 mb-4">Liên hệ</h2>
                 <p className="text-gray-700 mb-2">Để được tư vấn chi tiết, vui lòng liên hệ:</p>
-                <p className="text-gray-700 font-medium">Hotline: 0902.190.866</p>
+                <p className="text-gray-700 font-medium">Hotline: 0906286444</p>
                 <p className="text-gray-700 font-medium">Email: daphuongthucvntransp@gmail.com</p>
               </div>
             </div>

@@ -22,12 +22,12 @@ export default function Footer() {
             <h3 className="text-lg font-bold text-gray-800 mb-4">Liên hệ</h3>
             <ul className="space-y-3">
               <li className="flex items-start gap-3">
-                <MapPin className="h-5 w-5 text-red-600 mt-0.5" />
+                <MapPin className="h-5 w-10 text-red-600" />
                 <span className="text-gray-600">162 Đường Phương Liệt, Phường Phương Liệt, Quận Thanh Xuân, Thành phố Hà Nội</span>
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="h-5 w-5 text-red-600" />
-                <span className="text-gray-600">0902.190.866</span>
+                <span className="text-gray-600">0906286444</span>
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="h-5 w-5 text-red-600" />
@@ -75,7 +75,7 @@ export default function Footer() {
             <h3 className="text-lg font-bold text-gray-800 mb-4">Kết nối với chúng tôi</h3>
             <div className="flex gap-4 mb-6">
               <Link
-                href="https://facebook.com"
+                href="https://www.facebook.com/Vntransplogistics"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-blue-700 text-white p-2 rounded-full hover:bg-blue-800"
@@ -91,7 +91,7 @@ export default function Footer() {
                 <Youtube className="h-5 w-5" />
               </Link>
               <Link
-                href="https://zalo.me/0902190866"
+                href="https://zalo.me/0906286444"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-blue-500 text-white p-2 rounded-full hover:bg-blue-700"
@@ -103,7 +103,7 @@ export default function Footer() {
             <h3 className="text-lg font-bold text-gray-800 mb-4">Hotline</h3>
             <div className="bg-red-600 text-white px-4 py-2 rounded-md inline-flex items-center gap-2">
               <Phone className="h-5 w-5" />
-              <span className="font-bold">0902.190.866</span>
+              <span className="font-bold">0906286444</span>
             </div>
           </div>
         </div>

@@ -19,7 +19,7 @@ export default function ServicesSection() {
             <Link key={service.id} href={`/dich-vu/${service.slug}`}>
               <div className="bg-white rounded-lg shadow-md p-6 h-full hover:shadow-lg transition-shadow">
                 <div className="flex justify-center mb-4">
-                  <img src={service?.thumbnail?.imageUrl || ''} className="w-full h-[200px] object-cover" loading="lazy"/>
+                  <img src={service?.thumbnail?.imageUrl || 'https://plus.unsplash.com/premium_photo-1677535536188-84ae32f3f309?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjQ5fHxsb2dpc3RpY3xlbnwwfHwwfHx8MA%3D%3D'} className="w-full h-[250px] object-cover rounded-sm" loading="lazy"/>
                 </div>
                 <h3 className="text-xl font-semibold text-center text-gray-800 mb-3">{service.name}</h3>
                 <p className="text-gray-600 text-center line-clamp-3 text-ellipsis">{parse(service.description || '')}</p>

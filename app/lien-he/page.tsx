@@ -30,7 +30,7 @@ export default function ContactPage() {
 									</div>
 									<div>
 										<h3 className="font-semibold text-lg mb-1">Điện thoại</h3>
-										<p className="text-gray-600">0902.190.866</p>
+										<p className="text-gray-600">0906286444</p>
 									</div>
 								</div>
 								
@@ -63,7 +63,7 @@ export default function ContactPage() {
 										<h4 className="font-medium mb-1">Chi nhánh Hà Nội</h4>
 										<p className="text-gray-600"> 162 Đường Phương Liệt, Phường Phương Liệt, Quận Thanh Xuân,
 											Thành phố Hà Nội</p>
-										<p className="text-gray-600">Điện thoại: 0902.190.866</p>
+										<p className="text-gray-600">Điện thoại: 0906286444</p>
 									</div>
 								</div>
 							</div>

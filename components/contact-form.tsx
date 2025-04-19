@@ -10,6 +10,7 @@ import {Select, SelectContent, SelectItem, SelectTrigger, SelectValue} from "@/c
 import {useGetCategories} from "@/hooks/useGetCategories";
 import {Category} from "@/types/app.type";
 import {appointmentService} from "@/services/appointment.service";
+import {toast} from "sonner";
 
 export default function ContactForm() {
 	const [formData, setFormData] = useState({
@@ -55,6 +56,7 @@ export default function ContactForm() {
 				message: "",
 			})
 			
+			toast.success("Gửi thông tin thành công")
 			setIsSuccess(false)
 		} catch (e) {
 			console.log(e)

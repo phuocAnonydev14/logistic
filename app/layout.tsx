@@ -5,6 +5,7 @@ import "./globals.css"
 import Header from "@/components/header"
 import Footer from "@/components/footer"
 import {MainLayout} from "@/components/MainLayout";
+import {Toaster} from "sonner";
 
 const inter = Inter({subsets: ["latin"]})
 
@@ -54,6 +55,7 @@ export default function RootLayout({
 		<body className={inter.className}>
 		<MainLayout>
 			<Header/>
+			<Toaster />
 			<main className="overflow-hidden mb-10">
 				{children}
 			</main>

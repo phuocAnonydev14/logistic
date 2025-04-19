@@ -32,7 +32,7 @@ export default function Header() {
             <Phone className="h-5 w-5 text-red-600" />
             <div>
               <p className="text-xs text-gray-500">Hỗ trợ dịch vụ</p>
-              <p className="font-semibold">0902.190.866</p>
+              <p className="font-semibold">0906286444</p>
             </div>
           </div>
 
@@ -156,7 +156,7 @@ export default function Header() {
               <Phone className="h-5 w-5 text-red-600" />
               <div>
                 <p className="text-xs text-gray-500">Hỗ trợ dịch vụ</p>
-                <p className="font-semibold">0902.190.866</p>
+                <p className="font-semibold">0906286444</p>
               </div>
             </div>
 
@@ -169,14 +169,14 @@ export default function Header() {
             </div>
 
             <div className="flex gap-4 mt-4">
-              <Link href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+              <Link href="https://www.facebook.com/Vntransplogistics" target="_blank" rel="noopener noreferrer">
                 <Image src="/facebook.png" alt="Zalo" width={20} height={20} />
               
               </Link>
               <Link href="https://youtube.com" target="_blank" rel="noopener noreferrer">
                 <Image src="/youtube.png" alt="Zalo" width={20} height={20} />
               </Link>
-              <Link href="https://zalo.me" target="_blank" rel="noopener noreferrer">
+              <Link href="https://zalo.me/0906286444" target="_blank" rel="noopener noreferrer">
                 <Image src="/zalo-icon.png" alt="Zalo" width={20} height={20} />
               </Link>
             </div>
@@ -243,10 +243,10 @@ export default function Header() {
             </ul>
 
             <div className="hidden md:flex items-center gap-3">
-              <Link href="https://zalo.me/0902190866" target="_blank" rel="noopener noreferrer">
+              <Link href="https://zalo.me/0906286444" target="_blank" rel="noopener noreferrer">
                 <Image src="/zalo-icon.png" alt="Zalo" width={24} height={24} />
               </Link>
-              <Link href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+              <Link href="https://www.facebook.com/Vntransplogistics" target="_blank" rel="noopener noreferrer">
                 <Image src="/facebook.png" alt="Zalo" width={20} height={20} />
               </Link>
               <Link href="https://youtube.com" target="_blank" rel="noopener noreferrer">

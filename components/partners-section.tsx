@@ -5,7 +5,7 @@ import Image from "next/image"
 import dataJson from "@/components/home-page/home-page.json"
 
 export default function PartnersSection() {
-	const [duplicatedPartners, setDuplicatedPartners] = useState([...dataJson.partners, ...dataJson.partners])
+	const [duplicatedPartners, setDuplicatedPartners] = useState([...dataJson.partners, ...dataJson.partners, ...dataJson.partners])
 	const scrollRef = useRef<HTMLDivElement>(null)
 	const [scrollWidth, setScrollWidth] = useState(0)
 	const [containerWidth, setContainerWidth] = useState(0)
