@@ -23,7 +23,7 @@ export function HomeCarousel() {
 		if (!api) return;
 		let currentIndex = 0
 		setInterval(() => {
-			currentIndex = (currentIndex + 1) % images.length;
+			currentIndex = (currentIndex + 1) % dataJson.carouselImage.length;
 			api?.scrollTo(currentIndex)
 		}, 10000)
 	}, [api]);
@@ -37,11 +37,11 @@ export function HomeCarousel() {
 			}}>
 			<CarouselContent className="relative h-full">
 				{dataJson.carouselImage.map((image, index) => (
-					<CarouselItem key={index} className="h-full">
+					<CarouselItem key={index} className="size-full ">
 						<div
 							className="flex justify-center p-0"
 						>
-							<Image
+							<img
 								width={2000}
 								height={1000}
 								priority
@@ -54,8 +54,8 @@ export function HomeCarousel() {
 					</CarouselItem>
 				))}
 			</CarouselContent>
-			<CarouselPrevious className="absolute left-1 top-1/2 bg-white sm:left-10" color="#fff" style={{zIndex: "10"}}/>
-			<CarouselNext className="absolute right-1 top-1/2 bg-white  sm:right-10" color="#fff" style={{zIndex: "10"}}/>
+			{/*<CarouselPrevious className="absolute left-1 top-1/2 bg-white sm:left-10" color="#fff" style={{zIndex: "10"}}/>*/}
+			{/*<CarouselNext className="absolute right-1 top-1/2 bg-white  sm:right-10" color="#fff" style={{zIndex: "10"}}/>*/}
 		</Carousel>
 	)
 }
