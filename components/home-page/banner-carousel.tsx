@@ -11,7 +11,6 @@ import {
 	CarouselPrevious
 } from "@/components/ui/carousel";
 import {useEffect, useState} from "react";
-import Image from "next/image";
 import dataJson from "./home-page.json"
 
 export function HomeCarousel() {
@@ -54,8 +53,8 @@ export function HomeCarousel() {
 					</CarouselItem>
 				))}
 			</CarouselContent>
-			{/*<CarouselPrevious className="absolute left-1 top-1/2 bg-white sm:left-10" color="#fff" style={{zIndex: "10"}}/>*/}
-			{/*<CarouselNext className="absolute right-1 top-1/2 bg-white  sm:right-10" color="#fff" style={{zIndex: "10"}}/>*/}
+			<CarouselPrevious className="absolute left-1 top-1/2 bg-white sm:left-10" color="#fff" style={{zIndex: "10"}}/>
+			<CarouselNext className="absolute right-1 top-1/2 bg-white  sm:right-10" color="#fff" style={{zIndex: "10"}}/>
 		</Carousel>
 	)
 }
