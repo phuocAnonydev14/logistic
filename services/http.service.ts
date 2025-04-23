@@ -3,27 +3,15 @@ import axiosRetry from "axios-retry";
 import {
   CacheRequestConfig,
 } from "axios-cache-interceptor";
-import { jwtDecode } from "jwt-decode";
 import * as process from "process";
 import { IParams } from "@/types/service.type";
-
-// Simplified token expiration check
-const isTokenExpired = (token: string): boolean => {
-  if (!token) return true;
-  try {
-    const { exp } = jwtDecode<{ exp: number }>(token);
-    return exp < Date.now() / 1000;
-  } catch {
-    return true;
-  }
-};
 
 class HttpService {
   private readonly http: AxiosInstance;
   private readonly baseURL: string;
 
   constructor(customBaseUrl?: string) {
-    this.baseURL = "https://vntranspbackend-production.up.railway.app/v1";
+    this.baseURL = process.env.NEXT_PUBLIC_BASE_URL || "https://vntranspbackend-production.up.railway.app/v1";
 
     // Create and configure axios instance
     this.http =

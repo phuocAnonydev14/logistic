@@ -29,7 +29,7 @@ export const InternalNews = ({isHomePage}: { isHomePage?: boolean }) => {
 					if (isHomePage && index >= 3) return
 					return <Link key={news.id} href={`/tin-tuc/${news.slug}`} className="block h-full">
 						<div
-							className="bg-white border border-gray-200 overflow-hidden h-full hover:shadow-lg transition-all group">
+							className="bg-white border border-gray-200 overflow-hidden h-full hover:shadow-lg transition-all group animate-slide-up">
 							<div className="relative h-48 w-full overflow-hidden">
 								{index < 3 && <div className="absolute top-0 right-0 z-10 bg-red-600 text-white text-xs font-medium py-1 px-2">
 									NEW

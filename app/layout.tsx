@@ -6,6 +6,7 @@ import Header from "@/components/header"
 import Footer from "@/components/footer"
 import {MainLayout} from "@/components/MainLayout";
 import {Toaster} from "sonner";
+import {GoogleAnalytics} from '@next/third-parties/google'
 
 const inter = Inter({subsets: ["latin"]})
 
@@ -53,14 +54,15 @@ export default function RootLayout({
 		</head>
 		
 		<body className={inter.className}>
-		<MainLayout>
-			<Header/>
-			<Toaster />
-			<main className="overflow-hidden mb-10">
-				{children}
-			</main>
-			<Footer/>
-		</MainLayout>
+		<GoogleAnalytics gaId="G-7BQCPFV3F4"/>
+			<MainLayout>
+				<Header/>
+				<Toaster/>
+				<main className="overflow-hidden mb-10">
+					{children}
+				</main>
+				<Footer/>
+			</MainLayout>
 		</body>
 		</html>
 	)

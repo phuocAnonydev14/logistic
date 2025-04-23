@@ -121,7 +121,7 @@ export default function ContactForm() {
 					<label htmlFor="categoryId" className="block text-sm font-medium text-gray-700 mb-1">
 						Dịch vụ quan tâm
 					</label>
-					<Select value={formData.categoryId} onValueChange={handleSelectChange}>
+					<Select value={formData.categoryId} defaultValue={data?.[0]?.id.toString()} onValueChange={handleSelectChange}>
 						<SelectTrigger>
 							<SelectValue placeholder="Chọn dịch vụ"/>
 						</SelectTrigger>

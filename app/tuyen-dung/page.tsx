@@ -4,85 +4,12 @@ import { MapPin, Clock, Banknote } from "lucide-react"
 import PageHeader from "@/components/page-header"
 import { Button } from "@/components/ui/button"
 import dataJson from './why-choose-us.json'
+import {recruitmentService} from "@/services/recruitment.service";
 
-const jobs = [
-  // {
-  //   id: 1,
-  //   title: "Nhân viên điều phối vận tải",
-  //   location: "Hà Nội",
-  //   type: "Toàn thời gian",
-  //   salary: "15-20 triệu",
-  //   description:
-  //     "Chúng tôi đang tìm kiếm nhân viên điều phối vận tải có kinh nghiệm để quản lý và điều phối đội xe vận tải đường bộ.",
-  //   requirements: [
-  //     "Tốt nghiệp Cao đẳng/Đại học chuyên ngành Logistics, Quản trị kinh doanh hoặc các ngành liên quan",
-  //     "Có ít nhất 2 năm kinh nghiệm trong lĩnh vực điều phối vận tải",
-  //     "Kỹ năng giao tiếp và đàm phán tốt",
-  //     "Thành thạo tin học văn phòng",
-  //     "Có khả năng làm việc dưới áp lực cao",
-  //   ],
-  //   benefits: [
-  //     "Mức lương cạnh tranh, thưởng theo hiệu quả công việc",
-  //     "Đóng BHXH, BHYT, BHTN đầy đủ theo quy định",
-  //     "Môi trường làm việc chuyên nghiệp, năng động",
-  //     "Cơ hội thăng tiến và phát triển nghề nghiệp",
-  //     "Các chế độ phúc lợi theo quy định của công ty",
-  //   ],
-  //   deadline: "30/04/2023",
-  //   slug: "nhan-vien-dieu-phoi-van-tai",
-  // },
-  // {
-  //   id: 2,
-  //   title: "Nhân viên kinh doanh logistics",
-  //   location: "Hồ Chí Minh",
-  //   type: "Toàn thời gian",
-  //   salary: "15-25 triệu",
-  //   description:
-  //     "Chúng tôi cần tuyển nhân viên kinh doanh logistics để phát triển thị trường và chăm sóc khách hàng hiện có.",
-  //   requirements: [
-  //     "Tốt nghiệp Đại học chuyên ngành Kinh tế, Ngoại thương, Logistics hoặc các ngành liên quan",
-  //     "Có ít nhất 1 năm kinh nghiệm trong lĩnh vực kinh doanh logistics",
-  //     "Kỹ năng giao tiếp và đàm phán tốt",
-  //     "Thành thạo tiếng Anh giao tiếp",
-  //     "Có khả năng làm việc độc lập và theo nhóm",
-  //   ],
-  //   benefits: [
-  //     "Mức lương cạnh tranh + hoa hồng theo doanh số",
-  //     "Đóng BHXH, BHYT, BHTN đầy đủ theo quy định",
-  //     "Môi trường làm việc chuyên nghiệp, năng động",
-  //     "Cơ hội thăng tiến và phát triển nghề nghiệp",
-  //     "Các chế độ phúc lợi theo quy định của công ty",
-  //   ],
-  //   deadline: "15/05/2023",
-  //   slug: "nhan-vien-kinh-doanh-logistics",
-  // },
-  // {
-  //   id: 3,
-  //   title: "Lái xe container",
-  //   location: "Hải Phòng",
-  //   type: "Toàn thời gian",
-  //   salary: "12-18 triệu",
-  //   description: "Chúng tôi cần tuyển lái xe container có kinh nghiệm để vận chuyển hàng hóa trong nước và quốc tế.",
-  //   requirements: [
-  //     "Có bằng lái xe hạng C, D, E, FC",
-  //     "Có ít nhất 2 năm kinh nghiệm lái xe container",
-  //     "Có kiến thức về luật giao thông đường bộ",
-  //     "Có sức khỏe tốt, chịu được áp lực công việc",
-  //     "Có tinh thần trách nhiệm cao",
-  //   ],
-  //   benefits: [
-  //     "Mức lương cạnh tranh + phụ cấp theo chuyến",
-  //     "Đóng BHXH, BHYT, BHTN đầy đủ theo quy định",
-  //     "Được trang bị đầy đủ thiết bị bảo hộ lao động",
-  //     "Được đào tạo và nâng cao tay nghề",
-  //     "Các chế độ phúc lợi theo quy định của công ty",
-  //   ],
-  //   deadline: "20/05/2023",
-  //   slug: "lai-xe-container",
-  // },
-]
-
-export default function RecruitmentPage() {
+export default async function RecruitmentPage() {
+  
+  const res = await recruitmentService.getRecruitment({})
+  
   return (
     <div>
       <PageHeader title="Tuyển dụng" />
@@ -100,7 +27,7 @@ export default function RecruitmentPage() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {jobs.map((job) => (
+            {res?.data?.map((job) => (
               <div
                 key={job.id}
                 className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow"
@@ -125,9 +52,9 @@ export default function RecruitmentPage() {
 
                   <p className="text-gray-600 mb-4">{job.description}</p>
 
-                  <div className="text-center">
-                    <Link href={`/tuyen-dung/${job.slug}`}>
-                      <Button className="bg-blue-700 hover:bg-blue-800">Xem chi tiết</Button>
+                  <div className="text-left">
+                    <Link href={`/lien-he`}>
+                      <Button className="bg-blue-700 hover:bg-blue-800">Liên hệ</Button>
                     </Link>
                   </div>
                 </div>
