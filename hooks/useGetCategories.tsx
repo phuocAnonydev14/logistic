@@ -5,7 +5,7 @@ import {CategoryGetAllFilter, categoryService} from "@/services/category.service
 
 export const useGetCategories = ({filter}:{filter?:CategoryGetAllFilter}) => {
   return useQuery({
-    queryKey: ["categories", filter], // Include filter in queryKey for proper caching
+    queryKey: ["categories"], // Include filter in queryKey for proper caching
     queryFn: () => categoryService.getAllCategories(filter),
     staleTime: 5 * 60 * 1000, // 5 minutes in milliseconds
     refetchOnWindowFocus: false, // Optional: prevents refetch on window focus
