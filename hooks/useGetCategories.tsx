@@ -7,5 +7,6 @@ export const useGetCategories = ({filter}:{filter?:CategoryGetAllFilter}) => {
   return useQuery({
     queryKey: ["categories"],
     queryFn: () => categoryService.getAllCategories(filter),
+    staleTime: 50000
   });
 }
