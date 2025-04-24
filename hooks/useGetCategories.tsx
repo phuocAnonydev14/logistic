@@ -5,7 +5,7 @@ import {CategoryGetAllFilter, categoryService} from "@/services/category.service
 import {Category} from "@/types/app.type";
 import {useAtom, atom} from 'jotai'
 
-const categoryAtom = atom<Category[]>([])
+export const categoryAtom = atom<Category[]>([])
 
 export const useGetCategories = ({filter}: { filter?: CategoryGetAllFilter }) => {
 	
