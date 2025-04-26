@@ -51,7 +51,10 @@ export default async function ServicePage({ params }: any) {
           </div>
 
           {/* Main Content */}
-          <div>{parse(service?.content || '')}</div>
+          <div>
+            <img src={service?.thumbnail?.imageUrl || ""} alt="" className="h-auto w-full max-h-72 max-w-[90%] object-cover mb-4"/>
+            <div>{parse(service?.content || '')}</div>
+          </div>
         </div>
       </div>
     </div>
