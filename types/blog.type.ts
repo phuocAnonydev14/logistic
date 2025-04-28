@@ -5,6 +5,7 @@ export interface BlogType extends BaseEntity {
   desc?: string;
   content?: string;
   slug?: string;
+  tag?: string
   thumbnail?: ImageType;
 }
 

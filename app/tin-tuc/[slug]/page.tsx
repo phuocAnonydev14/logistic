@@ -8,7 +8,7 @@ export default  async function NewsDetailPage({ params }: any) {
   const slug = (await params).slug
 
   const news = await blogService.getBlogDetail(slug)
-  const relatedNews = await blogService.getAllBlogs({filter:JSON.stringify({categoryId:news.categoryId}),page:1,limit:8})
+  const relatedNews = await blogService.getAllBlogs({filter:JSON.stringify({tag:news.tag}),page:1,limit:8})
 
   return (
     <div>
@@ -41,14 +41,14 @@ export default  async function NewsDetailPage({ params }: any) {
           <div className="w-full lg:w-2/3">
             <article className="bg-white rounded-lg overflow-hidden">
               <div className="relative h-[300px] md:h-[400px] w-full">
-                <Image src={news?.image || "/placeholder.svg"} alt={news.title} fill className="object-cover" />
+                <Image src={news?.thumbnail?.imageUrl || "/placeholder.svg"} alt={news.title || ""} fill className="object-cover" />
               </div>
 
               <div className="py-6">
                 <h1 className="text-2xl md:text-3xl font-bold text-gray-800 mb-4">{news.title}</h1>
                 
 
-                <div className="prose max-w-none" dangerouslySetInnerHTML={{ __html: news.content }} />
+                <div className="prose max-w-none" dangerouslySetInnerHTML={{ __html: news.content || "" }} />
                 <div className="flex flex-wrap items-center gap-4 text-sm text-gray-500 my-6">
                   <div className="flex items-center gap-1">
                     <Calendar className="h-4 w-4" />
@@ -73,7 +73,7 @@ export default  async function NewsDetailPage({ params }: any) {
                           {item.title}
                         </h3>
                       </Link>
-                      <p className="text-sm text-gray-500 mt-1">{item.date}</p>
+                      <p className="text-sm text-gray-500 mt-1">{item.createdAt}</p>
                     </div>
                   </div>
                 ))}
