@@ -9,6 +9,7 @@ import {recruitmentService} from "@/services/recruitment.service";
 export default async function RecruitmentPage() {
   
   const res = await recruitmentService.getRecruitment({})
+  console.log("res", res)
   
   return (
     <div>
