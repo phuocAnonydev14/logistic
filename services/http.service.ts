@@ -18,7 +18,6 @@ class HttpService {
       axios.create({
         baseURL: this.baseURL,
         withCredentials: false,
-        timeout: 10000,
       })
 
     this.injectInterceptors();
