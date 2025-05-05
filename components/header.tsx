@@ -3,7 +3,7 @@
 import { useState } from "react"
 import Link from "next/link"
 import Image from "next/image"
-import { Phone, Clock, Mail, ChevronDown,  Menu, X } from "lucide-react"
+import { Phone, Clock, Mail, ChevronDown,  Menu } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Sheet, SheetContent } from "@/components/ui/sheet"
 import {useGetCategories} from "@/hooks/useGetCategories";
@@ -65,9 +65,6 @@ export default function Header() {
             <Link href="/" onClick={() => setMobileMenuOpen(false)}>
               <Image src="/logo.png" alt="Vntransp Logistics" width={100} height={50} className="h-12 w-auto" />
             </Link>
-            <Button variant="ghost" size="icon" onClick={() => setMobileMenuOpen(false)}>
-              <X className="h-5 w-5" />
-            </Button>
           </div>
 
           <div className="space-y-4 mb-6">

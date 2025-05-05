@@ -73,7 +73,7 @@ export default  async function NewsDetailPage({ params }: any) {
                           {item.title}
                         </h3>
                       </Link>
-                      <p className="text-sm text-gray-500 mt-1">{item.createdAt}</p>
+                      <p className="text-sm text-gray-500 mt-1">{moment(item.createdAt).format("MM-DD-YYYY")}</p>
                     </div>
                   </div>
                 ))}
