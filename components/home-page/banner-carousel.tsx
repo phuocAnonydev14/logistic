@@ -43,10 +43,9 @@ export function HomeCarousel() {
 							<img
 								width={2000}
 								height={1000}
-								priority
 								style={{objectFit: "cover"}}
 								src={image}
-								className="sm:h-[80dvh] h-[50dvh] w-full select-none object-cover object-center"
+								className="sm:h-[80dvh] h-[50dvh] w-full select-none object-cover object-center translate-x-5"
 								alt=""
 							/>
 						</div>
