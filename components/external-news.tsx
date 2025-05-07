@@ -57,7 +57,7 @@ export const ExternalNews = ({isHomePage}: { isHomePage?: boolean }) => {
 									NEW
 								</div>
 								<Image
-									src={news.image || "https://plus.unsplash.com/premium_photo-1677535536188-84ae32f3f309?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjQ5fHxsb2dpc3RpY3xlbnwwfHwwfHx8MA%3D%3D"}
+									src={news.thumbnail.imageUrl || "https://plus.unsplash.com/premium_photo-1677535536188-84ae32f3f309?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjQ5fHxsb2dpc3RpY3xlbnwwfHwwfHx8MA%3D%3D"}
 									alt={news.title}
 									fill
 									className="object-cover group-hover:scale-105 transition-all"

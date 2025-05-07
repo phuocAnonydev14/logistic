@@ -48,7 +48,7 @@ export default  async function NewsDetailPage({ params }: any) {
                 <h1 className="text-2xl md:text-3xl font-bold text-gray-800 mb-4">{news.title}</h1>
                 
 
-                <div className="prose max-w-none space-y-2" dangerouslySetInnerHTML={{ __html: news.content || "" }} />
+                <div className="prose max-w-none space-y-2 editable-content" dangerouslySetInnerHTML={{ __html: news.content || "" }} />
                 <div className="flex flex-wrap items-center gap-4 text-sm text-gray-500 my-6">
                   <div className="flex items-center gap-1">
                     <Calendar className="h-4 w-4" />
