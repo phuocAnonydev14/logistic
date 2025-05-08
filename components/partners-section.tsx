@@ -21,7 +21,7 @@ export default function PartnersSection() {
 	const animationDuration = scrollWidth > 0 ? scrollWidth / 50 : 20 // Tốc độ chạy
 	
 	return (
-		<section className="py-16 md:block hidden">
+		<section className="py-16">
 			<div className="container mx-auto px-4">
 				<h2 className="text-3xl font-bold text-center text-gray-800 mb-12">Đối tác của chúng tôi</h2>
 				
