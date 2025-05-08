@@ -17,7 +17,7 @@ export const ExternalNews = ({isHomePage}: { isHomePage?: boolean }) => {
 	if(isHomePage){
 		return <div>
 			<div className="bg-[#003366] py-2 px-4 mb-4">
-				<h2 className="text-3xl font-bold text-white">Tin ngành</h2>
+				<h2 className="text-3xl font-bold text-white">Tin Xã hội</h2>
 			</div>
 			
 			<div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-2">
@@ -39,10 +39,10 @@ export const ExternalNews = ({isHomePage}: { isHomePage?: boolean }) => {
 	return <div >
 		<div className="mb-10">
 			{!isHomePage ?
-				<h2 className="text-3xl font-bold text-center m-6">Tin ngành</h2>
+				<h2 className="text-3xl font-bold text-center m-6">Tin Xã hội</h2>
 				:
 				<div className="bg-[#003366] py-2 px-4 mb-4">
-					<h2 className="text-3xl font-bold text-white">Tin ngành</h2>
+					<h2 className="text-3xl font-bold text-white">Tin Xã hội</h2>
 				</div>
 			}
 			<div className="grid grid-cols-1 md:grid-cols-3 gap-4">

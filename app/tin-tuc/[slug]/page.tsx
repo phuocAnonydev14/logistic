@@ -84,12 +84,12 @@ export default  async function NewsDetailPage({ params }: any) {
                 <ul className="space-y-2">
                   <li>
                     <Link href="/tin-tuc?category=Tin%20công%20ty" className="text-gray-700 hover:text-blue-900">
-                      Tin công ty
+                      Tin Công ty
                     </Link>
                   </li>
                   <li>
                     <Link href="/tin-tuc?category=Tin%20ngành" className="text-gray-700 hover:text-blue-900">
-                      Tin ngành
+                      Tin Xã hội
                     </Link>
                   </li>
                 </ul>

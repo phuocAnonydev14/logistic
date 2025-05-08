@@ -126,14 +126,14 @@ export default function Header() {
 										className="block py-1 text-gray-600"
 										onClick={() => setMobileMenuOpen(false)}
 									>
-										Tin công ty
+										Tin Công ty
 									</Link>
 									<Link
 										href="/tin-tuc/tin-nganh"
 										className="block py-1 text-gray-600"
 										onClick={() => setMobileMenuOpen(false)}
 									>
-										Tin ngành
+										Tin Xã hội
 									</Link>
 								</div>
 							)}
@@ -254,10 +254,10 @@ export default function Header() {
 								{isNewsOpen && (
 									<div className="absolute top-full left-0 bg-white text-gray-800 shadow-md min-w-[200px] z-10">
 										<Link href="/tin-tuc/tin-cong-ty" className="block px-4 py-2 hover:bg-gray-100">
-											Tin công ty
+											Tin Công ty
 										</Link>
 										<Link href="/tin-tuc/tin-nganh" className="block px-4 py-2 hover:bg-gray-100">
-											Tin ngành
+											Tin Xã hội
 										</Link>
 									</div>
 								)}

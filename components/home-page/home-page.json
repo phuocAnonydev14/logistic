@@ -40,6 +40,22 @@
     {
       "name": "J&T",
       "image": "https://www.vhv.rs/dpng/d/75-752914_j-t-logo-png-transparent-png.png"
+    },
+    {
+      "name": "MTV Bánh kẹo Á Châu",
+      "image": "https://hvnclc.vn/wp-content/uploads/2022/05/abc-bakery-logo-1068x583.png"
+    },{
+      "name": "D Mart",
+      "image": "https://bizweb.dktcdn.net/100/511/037/themes/942232/assets/logo.png?1736928543392"
+    },{
+      "name": "Daikin",
+      "image": "https://phucgia.com.vn/wp-content/uploads/2017/12/Logo_Daikin.png"
+    },{
+      "name": "Ferroli",
+      "image": "https://phucgia.com.vn/wp-content/uploads/2020/03/Ferroli-Logo-400x229.jpg"
+    }, {
+      "name": "Viettel",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Viettel_logo_2021.svg/768px-Viettel_logo_2021.svg.png"
     }
   ]
 }

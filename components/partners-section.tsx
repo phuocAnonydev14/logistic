@@ -25,7 +25,7 @@ export default function PartnersSection() {
 			<div className="container mx-auto px-4">
 				<h2 className="text-3xl font-bold text-center text-gray-800 mb-12">Đối tác của chúng tôi</h2>
 				
-				<div className="relative overflow-hidden">
+				<div className="relative">
 					<div
 						ref={scrollRef}
 						className="flex items-center gap-20"
@@ -35,17 +35,15 @@ export default function PartnersSection() {
 					>
 						{duplicatedPartners.map((partner, index) => (
 							<div
-								key={`${partner.id}-${index}`}
-								className="flex-shrink-0 bg-white  flex flex-col justify-center items-center"
+								key={`${partner.name}-${index}`}
+								className="flex-1 bg-white  flex flex-col justify-center items-center"
 								style={{minWidth: "150px"}}
 							>
-								<div className="relative h-16">
 									<img
 										src={partner.image || "/placeholder.svg?height=64&width=150"}
 										alt={partner.name}
-										className="object-cover w-28 h-auto"
+										className="object-contain w-auto h-28"
 									/>
-								</div>
 								<p className="mt-1 font-semibold text-sm">{partner.name}</p>
 							</div>
 						))}
