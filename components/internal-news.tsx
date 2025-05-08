@@ -18,10 +18,10 @@ export const InternalNews = ({isHomePage}: { isHomePage?: boolean }) => {
 	return <div>
 		<div>
 			{!isHomePage ?
-				<h2 className="text-3xl font-bold text-center m-6">Tin công ty</h2>
+				<h2 className="text-3xl font-bold text-center m-6">Tin Công ty</h2>
 				:
 				<div className="bg-[#003366] py-2 px-4 mb-4">
-					<h2 className="text-3xl font-bold text-white">Tin công ty</h2>
+					<h2 className="text-3xl font-bold text-white">Tin Công ty</h2>
 				</div>
 			}
 			<div className="grid grid-cols-1 md:grid-cols-3 gap-4">
