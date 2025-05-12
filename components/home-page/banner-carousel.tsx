@@ -30,7 +30,7 @@ export function HomeCarousel() {
 	return (
 		<Carousel
 			setApi={setApi}
-			className="relative h-[50dvh] sm:h-[80dvh] w-full"
+			className="relative h-[50dvh] sm:h-[81dvh] w-full"
 			opts={{
 				loop: true,
 			}}>
@@ -45,7 +45,7 @@ export function HomeCarousel() {
 								height={1000}
 								style={{objectFit: "cover"}}
 								src={image}
-								className="sm:h-[80dvh] h-[50dvh] w-full select-none object-cover object-center translate-x-5"
+								className="sm:h-[81dvh] h-[50dvh] w-full select-none object-cover object-center translate-x-5"
 								alt=""
 							/>
 						</div>
