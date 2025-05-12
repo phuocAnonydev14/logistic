@@ -1,10 +1,11 @@
 {
   "carouselImage": [
+    "https://i.imgur.com/LR5g5fn.jpeg",
+    "https://i.imgur.com/rxuoUmI.jpeg",
+    "https://i.imgur.com/8JWBDpQ.jpeg",
     "https://images.unsplash.com/photo-1565891741441-64926e441838?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "https://images.pexels.com/photos/262353/pexels-photo-262353.jpeg",
-    "https://i.imgur.com/o1mwNwR.jpeg",
-    "https://images.pexels.com/photos/1427541/pexels-photo-1427541.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    "https://img.freepik.com/free-photo/aerial-view-cargo-ship-cargo-container-harbor_335224-1370.jpg?t=st=1746599056~exp=1746602656~hmac=84c10d2174493a69e187342cc189022932a4d654c129b214ee245b4f1e312414&w=1380"
+    "https://images.pexels.com/photos/1427541/pexels-photo-1427541.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
   ],
   "about": {
     "content": [
@@ -14,13 +15,11 @@
     "youtube": "https://www.youtube.com/embed/DRZymVT5i6w"
   },
   "images": [
-    "https://i.imgur.com/97sGUGQ.jpeg",
-    "https://i.imgur.com/3P1L4Jq.jpeg",
-    "https://i.imgur.com/zoozcTY.jpeg",
-    "https://i.imgur.com/9ihjwhd.jpeg",
-    "https://i.imgur.com/o1mwNwR.jpeg",
+    "https://i.imgur.com/LR5g5fn.jpeg",
+    "https://i.imgur.com/rxuoUmI.jpeg",
+    "https://i.imgur.com/8JWBDpQ.jpeg",
     "https://images.unsplash.com/photo-1565891741441-64926e441838?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "https://images.pexels.com/photos/262353/pexels-photo-262353.jpeg",
+    "https://images.unsplash.com/photo-1565891741441-64926e441838?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "https://images.pexels.com/photos/1427541/pexels-photo-1427541.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
   ],
   "partners": [
@@ -38,7 +37,7 @@
     },
     {
       "name": "J&T",
-      "image": "https://www.vhv.rs/dpng/d/75-752914_j-t-logo-png-transparent-png.png"
+      "image": "https://jtexpress.vn/themes/jtexpress/assets/images/logo.png"
     },
     {
       "name": "MTV Bánh kẹo Á Châu",
