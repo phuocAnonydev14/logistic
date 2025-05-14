@@ -61,6 +61,14 @@
     {
       "name": "Viettel",
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Viettel_logo_2021.svg/768px-Viettel_logo_2021.svg.png"
+    },
+    {
+      "name": "Nhựa hoa sen",
+      "image": "https://www.nhuahoasen.vn/wp-content/uploads/2024/07/NHS-New-Logo-1024x1024.jpg"
+    },
+    {
+      "name": "Nhựa tiền phong",
+      "image": "https://nhuatienphong.vn/main/imgs/ntp/logo.png"
     }
   ]
 }

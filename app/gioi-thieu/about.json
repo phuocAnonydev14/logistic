@@ -31,7 +31,8 @@
           "Đặt khách hàng làm trung tâm trong mọi suy nghĩ và hành động.",
           "Xác định sự tín nhiệm, hài lòng của khách hàng là mục tiêu hàng đầu."
         ]
-      },{
+      },
+      {
         "aboutSection": {
           "title": "Về Chúng Tôi",
           "missionTitle": "Sứ mệnh của chúng tôi",
@@ -45,7 +46,6 @@
           "highlights": [
             {
               "title": "Đội ngũ chuyên nghiệp"
-
             },
             {
               "title": "Phạm vi hoạt động",
@@ -124,7 +124,8 @@
               "initials": "LH",
               "rating": 5,
               "comment": "Hệ thống theo dõi hàng hóa thời gian thực giúp chúng tôi dễ dàng kiểm soát quá trình vận chuyển. Đội ngũ nhân viên nhiệt tình, chuyên nghiệp và luôn sẵn sàng hỗ trợ khi cần thiết."
-            },{
+            },
+            {
               "name": "Lê Hương",
               "position": "Quản lý vận hành - ABC Trading",
               "initials": "LH",
@@ -134,7 +135,6 @@
           ]
         }
       },
-
       {
         "title": "Học hỏi - Cải tiến liên tục",
         "icon": "sync-alt",
@@ -183,20 +183,21 @@
     "testimonialsList": [
       {
         "name": "Giang Võ",
-        "position": "Trưởng Phòng Kinh Doanh Công Ty PM Auto",
+        "position": "Trưởng Phòng Kinh Doanh Công Ty D Mart",
         "initials": "NT",
         "rating": 5,
         "comment": "Dịch vụ logistics chuyên nghiệp và đáng tin cậy. Chúng tôi đã hợp tác hơn 3 năm và luôn hài lòng với chất lượng dịch vụ. Đặc biệt ấn tượng với giải pháp logistics xanh của công ty."
       },
       {
-        "name": "Thành Hồ",
-        "position": "Giám Đốc Tamo",
+        "name": "Tuấn Anh",
+        "position": "Trưởng Phòng Công Ty Acecook",
         "initials": "LH",
         "rating": 5,
         "comment": "Hệ thống theo dõi hàng hóa thời gian thực giúp chúng tôi dễ dàng kiểm soát quá trình vận chuyển. Đội ngũ nhân viên nhiệt tình, chuyên nghiệp và luôn sẵn sàng hỗ trợ khi cần thiết."
-      },{
-        "name": "Lê Hương",
-        "position": "Quản lý vận hành - ABC Trading",
+      },
+      {
+        "name": "VĂN PHƯƠNG",
+        "position": "Giám Đốc Công Ty Nhựa Tiền Phong",
         "initials": "LH",
         "rating": 4.5,
         "comment": "Hệ thống theo dõi hàng hóa thời gian thực giúp chúng tôi dễ dàng kiểm soát quá trình vận chuyển. Đội ngũ nhân viên nhiệt tình, chuyên nghiệp và luôn sẵn sàng hỗ trợ khi cần thiết."

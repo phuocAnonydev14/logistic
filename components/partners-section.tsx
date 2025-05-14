@@ -37,7 +37,7 @@ export default function PartnersSection() {
 							<div
 								key={`${partner.name}-${index}`}
 								className="flex-1 bg-white  flex flex-col justify-center items-center"
-								style={{minWidth: "150px"}}
+								style={{minWidth: "160px"}}
 							>
 									<img
 										src={partner.image || "/placeholder.svg?height=64&width=150"}
